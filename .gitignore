@@ -1,0 +1,30 @@
+node_modules/
+out/
+dist/
+.remotion/
+
+# Rendered video and audio are large binaries - keep them out of git.
+# See docs/ASSETS.md for where they actually live.
+*.mp4
+*.wav
+*.mp3
+*.aac
+
+# Preview stills produced by the frame tool - transient, regenerate at will.
+.preview/
+
+# Synthesised narration. Regenerate with tools/tts/synth.mjs - the lines.json
+# and manifest.json ARE tracked, so durations survive without the audio.
+episodes/*/voice/out/
+# Remotion serves audio from public/. It is a copy of voice/out - regenerate
+# with `pnpm ep01:voice` rather than committing it twice.
+episodes/*/public/voice/
+voice-auditions/
+
+# Books are copyrighted source material. Never commit them.
+books/
+
+.env
+.env.local
+.DS_Store
+Thumbs.db

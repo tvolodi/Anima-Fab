@@ -1,0 +1,406 @@
+{
+  "model": "eleven_v3",
+  "generatedAt": "2026-08-09T09:47:21.986Z",
+  "lines": {
+    "n01": {
+      "hash": "cacbc2dc26b12e7d",
+      "speaker": "narrator",
+      "act": "cold-open",
+      "text": "Где-то в вашей компании кто-то выходит на работу в понедельник.",
+      "file": "voice/out/n01.mp3",
+      "durationSeconds": 4.31,
+      "frames30": 130,
+      "bytes": 69007
+    },
+    "n02": {
+      "hash": "9b0b18ce8d26e424",
+      "speaker": "narrator",
+      "act": "cold-open",
+      "text": "Кто-то знает, как это происходит.",
+      "file": "voice/out/n02.mp3",
+      "durationSeconds": 2.064,
+      "frames30": 62,
+      "bytes": 33062
+    },
+    "n03": {
+      "hash": "5194d5184159bd8c",
+      "speaker": "narrator",
+      "act": "cold-open",
+      "text": "Давайте спросим троих.",
+      "file": "voice/out/n03.mp3",
+      "durationSeconds": 1.593,
+      "frames30": 48,
+      "bytes": 25539
+    },
+    "n04": {
+      "hash": "fbea80a215f182af",
+      "speaker": "narrator",
+      "act": "act1-olga",
+      "text": "Ольга. Отдел кадров.",
+      "file": "voice/out/n04.mp3",
+      "durationSeconds": 1.672,
+      "frames30": 51,
+      "bytes": 26793
+    },
+    "o01": {
+      "hash": "6b44e5cb7bc92743",
+      "speaker": "olga",
+      "act": "act1-olga",
+      "text": "[firm] Три дня. С момента выхода у меня три дня, чтобы издать приказ и получить его подпись. Личная карточка, трудовая книжка, должность, оклад — всё дело целиком.",
+      "file": "voice/out/o01.mp3",
+      "durationSeconds": 11.18,
+      "frames30": 336,
+      "bytes": 178930
+    },
+    "o02": {
+      "hash": "2800e5b12e1c69df",
+      "speaker": "olga",
+      "act": "act1-olga",
+      "text": "[firm] Опоздаю — штраф на компанию. Ошибусь — штраф на компанию. [defensive] Не опаздываю и не ошибаюсь.",
+      "file": "voice/out/o02.mp3",
+      "durationSeconds": 7.419,
+      "frames30": 223,
+      "bytes": 118744
+    },
+    "n05": {
+      "hash": "dc535c790474acea",
+      "speaker": "narrator",
+      "act": "act1-olga",
+      "text": "Процесс Ольги проверяют. Поэтому процесс Ольги записан.",
+      "file": "voice/out/n05.mp3",
+      "durationSeconds": 4.702,
+      "frames30": 142,
+      "bytes": 75276
+    },
+    "n06": {
+      "hash": "4032dfbae011207d",
+      "speaker": "narrator",
+      "act": "act1-sergey",
+      "text": "Сергей. Айти́шник.",
+      "file": "voice/out/n06.mp3",
+      "durationSeconds": 1.75,
+      "frames30": 53,
+      "bytes": 28047
+    },
+    "s01": {
+      "hash": "2cb5a33c3d43632c",
+      "speaker": "sergey",
+      "act": "act1-sergey",
+      "text": "[tired] Учётная запись, почта, доступ к нужным папкам, ноутбук — если есть свободный. Полдня, если я знаю заранее.",
+      "file": "voice/out/s01.mp3",
+      "durationSeconds": 9.195,
+      "frames30": 276,
+      "bytes": 147165
+    },
+    "s02": {
+      "hash": "2fbe77e788e89426",
+      "speaker": "sergey",
+      "act": "act1-sergey",
+      "text": "[flatly] Если я знаю заранее.",
+      "file": "voice/out/s02.mp3",
+      "durationSeconds": 2.064,
+      "frames30": 62,
+      "bytes": 33062
+    },
+    "s03": {
+      "hash": "1c264fdcef55ba45",
+      "speaker": "sergey",
+      "act": "act1-sergey",
+      "text": "[sigh] [resigned tone] Заявку никто не присылает. Я узнаю, когда он уже стоит у стола.",
+      "file": "voice/out/s03.mp3",
+      "durationSeconds": 4.545,
+      "frames30": 137,
+      "bytes": 72768
+    },
+    "n07": {
+      "hash": "b3d5be4b42f896d5",
+      "speaker": "narrator",
+      "act": "act1-sergey",
+      "text": "Процесс Сергея не проверяет никто.",
+      "file": "voice/out/n07.mp3",
+      "durationSeconds": 2.377,
+      "frames30": 72,
+      "bytes": 38078
+    },
+    "n08": {
+      "hash": "ba3a03edc7835f47",
+      "speaker": "narrator",
+      "act": "act1-director",
+      "text": "И директор.",
+      "file": "voice/out/n08.mp3",
+      "durationSeconds": 1.515,
+      "frames30": 46,
+      "bytes": 24285
+    },
+    "d01": {
+      "hash": "27bd1f00aee3818a",
+      "speaker": "director",
+      "act": "act1-director",
+      "text": "[confident] У нас есть онбординг. Этим занимается отдел кадров. Есть чек-лист.",
+      "file": "voice/out/d01.mp3",
+      "durationSeconds": 5.172,
+      "frames30": 156,
+      "bytes": 82799
+    },
+    "n09": {
+      "hash": "c4556573fc9544a4",
+      "speaker": "narrator",
+      "act": "act1-director",
+      "text": "[matter-of-fact] Чек-лист есть. Его написали в две тысячи девятнадцатом. Человек, который уже уволился.",
+      "file": "voice/out/n09.mp3",
+      "durationSeconds": 6.374,
+      "frames30": 192,
+      "bytes": 102026
+    },
+    "n10": {
+      "hash": "8a49ab3a252c1176",
+      "speaker": "narrator",
+      "act": "act1-fourth",
+      "text": "Это трое.",
+      "file": "voice/out/n10.mp3",
+      "durationSeconds": 1.332,
+      "frames30": 40,
+      "bytes": 21359
+    },
+    "n11": {
+      "hash": "4161585d4459e933",
+      "speaker": "narrator",
+      "act": "act1-fourth",
+      "text": "[pauses] Есть четвёртый.",
+      "file": "voice/out/n11.mp3",
+      "durationSeconds": 1.332,
+      "frames30": 40,
+      "bytes": 21359
+    },
+    "n12": {
+      "hash": "efab8dd0f69d784c",
+      "speaker": "narrator",
+      "act": "act1-fourth",
+      "text": "Его руководитель. Который был уверен, что всё это уже происходит.",
+      "file": "voice/out/n12.mp3",
+      "durationSeconds": 4.859,
+      "frames30": 146,
+      "bytes": 77784
+    },
+    "n13": {
+      "hash": "aecdebe63e0ecec6",
+      "speaker": "narrator",
+      "act": "act2",
+      "text": "Четыре человека. Один процесс.",
+      "file": "voice/out/n13.mp3",
+      "durationSeconds": 2.534,
+      "frames30": 77,
+      "bytes": 40586
+    },
+    "n14": {
+      "hash": "b5b2fbdd613c8466",
+      "speaker": "narrator",
+      "act": "act2",
+      "text": "Давайте наложим их друг на друга.",
+      "file": "voice/out/n14.mp3",
+      "durationSeconds": 2.456,
+      "frames30": 74,
+      "bytes": 39332
+    },
+    "n15": {
+      "hash": "7adb4cdbcbbc9dfa",
+      "speaker": "narrator",
+      "act": "act2",
+      "text": "Здесь никто не врёт.",
+      "file": "voice/out/n15.mp3",
+      "durationSeconds": 1.332,
+      "frames30": 40,
+      "bytes": 21359
+    },
+    "n16": {
+      "hash": "4b4ea491f2f579d2",
+      "speaker": "narrator",
+      "act": "act2",
+      "text": "Ольга описывает то, что требует закон. Сергей описывает то, что он может сделать, когда ему сказали. Директор описывает документ из две тысячи девятнадцатого.",
+      "file": "voice/out/n16.mp3",
+      "durationSeconds": 11.494,
+      "frames30": 345,
+      "bytes": 183946
+    },
+    "n17": {
+      "hash": "c2e63e8db0821b89",
+      "speaker": "narrator",
+      "act": "act2",
+      "text": "А руководитель не описывает ничего — потому что не знает, что здесь есть что описывать.",
+      "file": "voice/out/n17.mp3",
+      "durationSeconds": 5.355,
+      "frames30": 161,
+      "bytes": 85725
+    },
+    "n18": {
+      "hash": "24cc4e80cc1031e7",
+      "speaker": "narrator",
+      "act": "act2",
+      "text": "И все они правы. [pauses] В этом и проблема.",
+      "file": "voice/out/n18.mp3",
+      "durationSeconds": 3.736,
+      "frames30": 113,
+      "bytes": 59812
+    },
+    "n19": {
+      "hash": "34a74cd3fb90e9f3",
+      "speaker": "narrator",
+      "act": "act2",
+      "text": "Процесс Ольги проверяют — поэтому он работает. Пространство между Ольгой и Сергеем не проверяет никто.",
+      "file": "voice/out/n19.mp3",
+      "durationSeconds": 7.105,
+      "frames30": 214,
+      "bytes": 113728
+    },
+    "n20": {
+      "hash": "4eaac5c266a8c618",
+      "speaker": "narrator",
+      "act": "act2",
+      "text": "Вот в этом пространстве новый сотрудник и сидит три дня.",
+      "file": "voice/out/n20.mp3",
+      "durationSeconds": 3.344,
+      "frames30": 101,
+      "bytes": 53542
+    },
+    "n21": {
+      "hash": "0195e19111d405d2",
+      "speaker": "narrator",
+      "act": "act3",
+      "text": "Это чего-то стоит.",
+      "file": "voice/out/n21.mp3",
+      "durationSeconds": 1.437,
+      "frames30": 44,
+      "bytes": 23031
+    },
+    "n22": {
+      "hash": "20808702a1657757",
+      "speaker": "narrator",
+      "act": "act3",
+      "text": "Это стоит трёх дней зарплаты, которую вы уже платите человеку, сидящему за столом без ноутбука.",
+      "file": "voice/out/n22.mp3",
+      "durationSeconds": 7.262,
+      "frames30": 218,
+      "bytes": 116236
+    },
+    "n23": {
+      "hash": "18d1d46c7e6c4215",
+      "speaker": "narrator",
+      "act": "act3",
+      "text": "Это стоит Сергею половины дня, потому что теперь это срочно. А срочно — потому что неделю назад ему никто не сказал.",
+      "file": "voice/out/n23.mp3",
+      "durationSeconds": 8.699,
+      "frames30": 261,
+      "bytes": 139224
+    },
+    "n24": {
+      "hash": "e7ff6f7333156bbd",
+      "speaker": "narrator",
+      "act": "act3",
+      "text": "Это стоит Ольге спора, которого она не заслужила. Потому что со стороны всё это выглядит так, будто кадры тормозят.",
+      "file": "voice/out/n24.mp3",
+      "durationSeconds": 7.993,
+      "frames30": 240,
+      "bytes": 127939
+    },
+    "n25": {
+      "hash": "b35b96d1700dee0b",
+      "speaker": "narrator",
+      "act": "act3",
+      "text": "И это стоит новому сотруднику первого впечатления о компании. Которое он запомнит.",
+      "file": "voice/out/n25.mp3",
+      "durationSeconds": 5.433,
+      "frames30": 164,
+      "bytes": 86979
+    },
+    "h01": {
+      "hash": "becad1fdabeea33b",
+      "speaker": "hire",
+      "act": "act3",
+      "text": "Простите… а мне куда?",
+      "file": "voice/out/h01.mp3",
+      "durationSeconds": 1.75,
+      "frames30": 53,
+      "bytes": 28047
+    },
+    "n26": {
+      "hash": "fd48ac6af572c79a",
+      "speaker": "narrator",
+      "act": "act4",
+      "text": "Решение — не в программе.",
+      "file": "voice/out/n26.mp3",
+      "durationSeconds": 1.985,
+      "frames30": 60,
+      "bytes": 31808
+    },
+    "n27": {
+      "hash": "2960945a2757e7f5",
+      "speaker": "narrator",
+      "act": "act4",
+      "text": "Решение скучное: они вчетвером, одна комната, одна стена и маркер.",
+      "file": "voice/out/n27.mp3",
+      "durationSeconds": 6.06,
+      "frames30": 182,
+      "bytes": 97010
+    },
+    "n28": {
+      "hash": "c31b69d4aede98d3",
+      "speaker": "narrator",
+      "act": "act4",
+      "text": "Они рисуют это один раз. Вместе. И где-то на двадцатой минуте кто-то произносит фразу, которая окупает всю встречу:",
+      "file": "voice/out/n28.mp3",
+      "durationSeconds": 8.229,
+      "frames30": 247,
+      "bytes": 131701
+    },
+    "n29": {
+      "hash": "d32aa832dd4cf1a5",
+      "speaker": "narrator",
+      "act": "act4",
+      "text": "«Подождите… а кто говорит айтишникам?»",
+      "file": "voice/out/n29.mp3",
+      "durationSeconds": 3.187,
+      "frames30": 96,
+      "bytes": 51035
+    },
+    "n30": {
+      "hash": "7663cf8091e41456",
+      "speaker": "narrator",
+      "act": "act4",
+      "text": "Этот вопрос — и есть вся дисциплина. Всё остальное — нотация, инструменты, репозиторий, комитет по управлению —",
+      "file": "voice/out/n30.mp3",
+      "durationSeconds": 8.072,
+      "frames30": 243,
+      "bytes": 129193
+    },
+    "n31": {
+      "hash": "0986eebbe803fd7c",
+      "speaker": "narrator",
+      "act": "act4",
+      "text": "— существует только затем, чтобы вы не спорили о форме стрелок, когда пытаетесь спорить про эти три дня.",
+      "file": "voice/out/n31.mp3",
+      "durationSeconds": 6.792,
+      "frames30": 204,
+      "bytes": 108713
+    },
+    "n32": {
+      "hash": "9fecdc92f3f14975",
+      "speaker": "narrator",
+      "act": "close",
+      "text": "В следующий раз: как нарисовать первую.",
+      "file": "voice/out/n32.mp3",
+      "durationSeconds": 3.344,
+      "frames30": 101,
+      "bytes": 53542
+    },
+    "n33": {
+      "hash": "41a9237c8273d603",
+      "speaker": "narrator",
+      "act": "close",
+      "text": "[matter-of-fact] Это проще, чем совещание.",
+      "file": "voice/out/n33.mp3",
+      "durationSeconds": 1.985,
+      "frames30": 60,
+      "bytes": 31808
+    }
+  }
+}

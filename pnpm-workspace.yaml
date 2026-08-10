@@ -1,0 +1,9 @@
+packages:
+  - "packages/*"
+  - "episodes/*"
+  - "tools/*"
+
+# Remotion's bundler needs esbuild's platform binary, which requires its
+# postinstall script to run.
+onlyBuiltDependencies:
+  - esbuild

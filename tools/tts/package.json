@@ -1,0 +1,11 @@
+{
+  "name": "@anima/tts",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "ElevenLabs synthesis and voice auditions. No dependencies - uses built-in fetch.",
+  "scripts": {
+    "audition": "node audition.mjs",
+    "synth": "node synth.mjs"
+  }
+}

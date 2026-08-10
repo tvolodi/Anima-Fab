@@ -1,0 +1,88 @@
+{
+  "$comment": "Episode 1 narration. Line ids are stable - timing.ts references them. Do not renumber; append instead. Square-bracket audio tags are eleven_v3 delivery direction and are NOT spoken - verified by round-tripping through Scribe. See docs/VOICE.md.",
+  "language": "ru",
+  "model": "eleven_v3",
+  "$casting": "All voices are Russian-native (locale=ru-RU). Stability values are deliberately HIGH for the narrator: the first listening round found that low stability plus performative tags made flat lines sound amused. See docs/VOICE.md.",
+  "speakers": {
+    "narrator": {
+      "voiceId": "ymDCYd8puC7gYjxIamPt",
+      "voiceName": "Marina - Soft, Clear and Warm (ru-RU)",
+      "note": "Dry, unhurried, never raises pitch at line ends. No enthusiasm. The material is funny because it is delivered as fact. Her label says WARM, which is the risk - stability is high to suppress it.",
+      "settings": { "stability": 0.85, "similarity_boost": 0.75, "style": 0.0 }
+    },
+    "olga": {
+      "voiceId": "AB9XsbSA4eLG12t2myjN",
+      "voiceName": "Larisa Actrisa - Confident and Clear (ru-RU)",
+      "note": "HR. Precise, slightly defensive - used to being blamed for delays that are not hers. MUST NOT sound like a bureaucrat joke. She is the most competent person in the episode.",
+      "settings": { "stability": 0.65, "similarity_boost": 0.8, "style": 0.15 }
+    },
+    "sergey": {
+      "voiceId": "qJBO8ZmKp4te7NTtYgzz",
+      "voiceName": "Egor - Natural, Soothing and Relatable (ru-RU)",
+      "note": "IT. Tired, not angry. Everything he describes has happened to him repeatedly. Faster and less certain than Olga.",
+      "settings": { "stability": 0.45, "similarity_boost": 0.75, "style": 0.25 }
+    },
+    "director": {
+      "voiceId": "Vl27Cllkuw8BhyPqus2n",
+      "voiceName": "VASKO - Deep, Warm and Pleasant (ru-RU)",
+      "note": "Short lines, slightly too loud, total confidence.",
+      "settings": { "stability": 0.5, "similarity_boost": 0.75, "style": 0.3 }
+    },
+    "hire": {
+      "voiceId": "s0phbFBBp708ZeIy8oGx",
+      "voiceName": "Arcadays - Warm, Light and Natural (ru-RU)",
+      "note": "One line only. Genuinely uncertain, not comic. Emotional close of the episode. NO TAGS on his line - the fix sweep proved tags made it comic.",
+      "settings": { "stability": 0.8, "similarity_boost": 0.7, "style": 0.0 }
+    }
+  },
+  "lines": [
+    { "id": "n01", "speaker": "narrator", "act": "cold-open", "text": "Где-то в вашей компании кто-то выходит на работу в понедельник." },
+    { "id": "n02", "speaker": "narrator", "act": "cold-open", "text": "Кто-то знает, как это происходит." },
+    { "id": "n03", "speaker": "narrator", "act": "cold-open", "text": "Давайте спросим троих." },
+
+    { "id": "n04", "speaker": "narrator", "act": "act1-olga", "text": "Ольга. Отдел кадров." },
+    { "id": "o01", "speaker": "olga", "act": "act1-olga", "text": "[firm] Три дня. С момента выхода у меня три дня, чтобы издать приказ и получить его подпись. Личная карточка, трудовая книжка, должность, оклад — всё дело целиком." },
+    { "id": "o02", "speaker": "olga", "act": "act1-olga", "text": "[firm] Опоздаю — штраф на компанию. Ошибусь — штраф на компанию. [defensive] Не опаздываю и не ошибаюсь." },
+    { "id": "n05", "speaker": "narrator", "act": "act1-olga", "text": "Процесс Ольги проверяют. Поэтому процесс Ольги записан." },
+
+    { "id": "n06", "speaker": "narrator", "act": "act1-sergey", "text": "Сергей. Айти́шник." },
+    { "id": "s01", "speaker": "sergey", "act": "act1-sergey", "text": "[tired] Учётная запись, почта, доступ к нужным папкам, ноутбук — если есть свободный. Полдня, если я знаю заранее." },
+    { "id": "s02", "speaker": "sergey", "act": "act1-sergey", "text": "[flatly] Если я знаю заранее." },
+    { "id": "s03", "speaker": "sergey", "act": "act1-sergey", "text": "[sigh] [resigned tone] Заявку никто не присылает. Я узнаю, когда он уже стоит у стола." },
+    { "id": "n07", "speaker": "narrator", "act": "act1-sergey", "text": "Процесс Сергея не проверяет никто." },
+
+    { "id": "n08", "speaker": "narrator", "act": "act1-director", "text": "И директор." },
+    { "id": "d01", "speaker": "director", "act": "act1-director", "text": "[confident] У нас есть онбординг. Этим занимается отдел кадров. Есть чек-лист." },
+    { "id": "n09", "speaker": "narrator", "act": "act1-director", "text": "[matter-of-fact] Чек-лист есть. Его написали в две тысячи девятнадцатом. Человек, который уже уволился." },
+
+    { "id": "n10", "speaker": "narrator", "act": "act1-fourth", "text": "Это трое." },
+    { "id": "n11", "speaker": "narrator", "act": "act1-fourth", "text": "[pauses] Есть четвёртый." },
+    { "id": "n12", "speaker": "narrator", "act": "act1-fourth", "text": "Его руководитель. Который был уверен, что всё это уже происходит." },
+
+    { "id": "n13", "speaker": "narrator", "act": "act2", "text": "Четыре человека. Один процесс." },
+    { "id": "n14", "speaker": "narrator", "act": "act2", "text": "Давайте наложим их друг на друга." },
+    { "id": "n15", "speaker": "narrator", "act": "act2", "text": "Здесь никто не врёт." },
+    { "id": "n16", "speaker": "narrator", "act": "act2", "text": "Ольга описывает то, что требует закон. Сергей описывает то, что он может сделать, когда ему сказали. Директор описывает документ из две тысячи девятнадцатого." },
+    { "id": "n17", "speaker": "narrator", "act": "act2", "text": "А руководитель не описывает ничего — потому что не знает, что здесь есть что описывать." },
+    { "id": "n18", "speaker": "narrator", "act": "act2", "text": "И все они правы. [pauses] В этом и проблема." },
+    { "id": "n19", "speaker": "narrator", "act": "act2", "text": "Процесс Ольги проверяют — поэтому он работает. Пространство между Ольгой и Сергеем не проверяет никто." },
+    { "id": "n20", "speaker": "narrator", "act": "act2", "text": "Вот в этом пространстве новый сотрудник и сидит три дня." },
+
+    { "id": "n21", "speaker": "narrator", "act": "act3", "text": "Это чего-то стоит." },
+    { "id": "n22", "speaker": "narrator", "act": "act3", "text": "Это стоит трёх дней зарплаты, которую вы уже платите человеку, сидящему за столом без ноутбука." },
+    { "id": "n23", "speaker": "narrator", "act": "act3", "text": "Это стоит Сергею половины дня, потому что теперь это срочно. А срочно — потому что неделю назад ему никто не сказал." },
+    { "id": "n24", "speaker": "narrator", "act": "act3", "text": "Это стоит Ольге спора, которого она не заслужила. Потому что со стороны всё это выглядит так, будто кадры тормозят." },
+    { "id": "n25", "speaker": "narrator", "act": "act3", "text": "И это стоит новому сотруднику первого впечатления о компании. Которое он запомнит." },
+    { "id": "h01", "speaker": "hire", "act": "act3", "text": "Простите… а мне куда?" },
+
+    { "id": "n26", "speaker": "narrator", "act": "act4", "text": "Решение — не в программе." },
+    { "id": "n27", "speaker": "narrator", "act": "act4", "text": "Решение скучное: они вчетвером, одна комната, одна стена и маркер." },
+    { "id": "n28", "speaker": "narrator", "act": "act4", "text": "Они рисуют это один раз. Вместе. И где-то на двадцатой минуте кто-то произносит фразу, которая окупает всю встречу:" },
+    { "id": "n29", "speaker": "narrator", "act": "act4", "text": "«Подождите… а кто говорит айтишникам?»" },
+    { "id": "n30", "speaker": "narrator", "act": "act4", "text": "Этот вопрос — и есть вся дисциплина. Всё остальное — нотация, инструменты, репозиторий, комитет по управлению —" },
+    { "id": "n31", "speaker": "narrator", "act": "act4", "text": "— существует только затем, чтобы вы не спорили о форме стрелок, когда пытаетесь спорить про эти три дня." },
+
+    { "id": "n32", "speaker": "narrator", "act": "close", "text": "В следующий раз: как нарисовать первую." },
+    { "id": "n33", "speaker": "narrator", "act": "close", "text": "[matter-of-fact] Это проще, чем совещание." }
+  ]
+}

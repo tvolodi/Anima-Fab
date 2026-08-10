@@ -1,0 +1,25 @@
+{
+  "name": "ep01-nobody-has-seen-it",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "voice": "node -e \"const fs=require('fs');fs.mkdirSync('public/voice',{recursive:true});for(const f of fs.readdirSync('voice/out'))fs.copyFileSync('voice/out/'+f,'public/voice/'+f);console.log('synced '+fs.readdirSync('public/voice').length+' clips')\"",
+    "render": "remotion render src/index.ts Episode out/ep01.mp4",
+    "still": "remotion still src/index.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@anima/core": "workspace:*",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "remotion": "^4.0.250",
+    "@remotion/cli": "^4.0.250"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.2",
+    "@types/react-dom": "^19.0.2",
+    "typescript": "^5.7.2"
+  }
+}
