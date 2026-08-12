@@ -64,6 +64,12 @@ const AUDITION = {
       "Genuinely uncertain, NOT comic. This is the emotional close of the episode. If it plays for a laugh, reject.",
     settings: { stability: 0.4, similarity_boost: 0.7, style: 0.2 },
   },
+  "en-narrator": {
+    text: "A value chain is what a company does. It does not yet say how the work actually moves. That gap is exactly where this chapter is headed.",
+    listenFor:
+      "S02's English narrator role - documentary/textbook register, explains, never dramatizes, no character. Must have WEIGHT and unhurried authority, not the bright, brisk, generic 'conversational AI assistant' read that most stock English voices default to. Reject anything that sounds chipper, rushed, or interchangeable with a customer-service bot. Pacing should sit with the words, not race past them - short pauses at the sentence breaks are a good sign, not a flaw. This replaces River (SAz9YHcvj6GT2YYXdXww), which read as too fast and too common per Producer feedback 2026-08-12.",
+    settings: { stability: 0.75, similarity_boost: 0.75, style: 0.0 },
+  },
 };
 
 /** See synth.mjs - accepts any reasonable spelling of the key name. */
@@ -85,6 +91,25 @@ async function loadEnv() {
       }
     }
   }
+}
+
+/** id -> {name, slug} for every voice on the account, used to name audition
+ * files after the voice rather than its opaque id - a file named
+ * `daniel-steady-british-broadcaster-onwK4e.mp3` is listenable-by-ear-later;
+ * `onwK4e9ZLuTAKqWW03F9.mp3` is not (Producer feedback 2026-08-12). */
+async function fetchVoiceMap(apiKey) {
+  const res = await fetch(`${API}/voices`, { headers: { "xi-api-key": apiKey } });
+  if (!res.ok) throw new Error(`ElevenLabs ${res.status}: ${await res.text()}`);
+  const data = await res.json();
+  const map = new Map();
+  for (const v of data.voices) {
+    const slug = v.name
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, "-")
+      .replace(/^-+|-+$/g, "");
+    map.set(v.voice_id, { name: v.name, slug });
+  }
+  return map;
 }
 
 async function listVoices(apiKey) {
@@ -151,13 +176,18 @@ async function main() {
   const outDir = path.join(REPO_ROOT, "voice-auditions", role);
   await mkdir(outDir, { recursive: true });
 
+  const voiceMap = await fetchVoiceMap(apiKey);
+
   console.log(`\nRole: ${role}`);
   console.log(`Line: "${spec.text}"`);
   console.log(`Model: ${model}\n`);
   console.log(`LISTEN FOR:\n  ${spec.listenFor}\n`);
 
   for (const voiceId of voiceIds) {
-    process.stdout.write(`  → ${voiceId} ... `);
+    const known = voiceMap.get(voiceId);
+    const label = known ? known.name : voiceId;
+    const fileBase = known ? `${known.slug}-${voiceId.slice(0, 6)}` : voiceId;
+    process.stdout.write(`  → ${label} (${voiceId}) ... `);
     try {
       const res = await fetch(`${API}/text-to-speech/${voiceId}`, {
         method: "POST",
@@ -178,19 +208,19 @@ async function main() {
         continue;
       }
       const buf = Buffer.from(await res.arrayBuffer());
-      const file = path.join(outDir, `${voiceId}.mp3`);
+      const file = path.join(outDir, `${fileBase}.mp3`);
       await writeFile(file, buf);
-      console.log(`${Math.round(buf.length / 1024)} KB`);
+      console.log(`${Math.round(buf.length / 1024)} KB -> ${path.basename(file)}`);
     } catch (err) {
       console.log("FAILED");
       console.error(`    ${err.message}`);
     }
   }
 
-  console.log(`\nWritten to voice-auditions/${role}/`);
+  console.log(`\nWritten to voice-auditions/${role}/, named after each voice.`);
   console.log(
     `Listen to all of them back to back before deciding. Then paste the winning\n` +
-      `voiceId into episodes/<ep>/voice/lines.json.\n`,
+      `voiceId (shown above in parentheses) into episodes/<ep>/voice/lines.json.\n`,
   );
 }
 

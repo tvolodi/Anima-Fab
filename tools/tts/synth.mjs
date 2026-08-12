@@ -179,18 +179,27 @@ async function main() {
   const dryRun = args.includes("--dry-run");
   const onlyArg = args.find((a) => a.startsWith("--only="));
   const only = onlyArg ? onlyArg.slice(7).split(",").map((s) => s.trim()) : null;
+  const langArg = args.find((a) => a.startsWith("--lang="));
+  const lang = langArg ? langArg.slice(7).trim() : null;
 
   if (!episode) {
     console.error(
-      "Usage: node tools/tts/synth.mjs <episode-dir> [--only=id1,id2] [--force] [--dry-run]",
+      "Usage: node tools/tts/synth.mjs <episode-dir> [--lang=en] [--only=id1,id2] [--force] [--dry-run]",
     );
     process.exit(1);
   }
 
+  // Default track: voice/lines.json -> voice/out/ -> voice/manifest.json.
+  // --lang=xx selects a sibling track: voice/lines.xx.json -> voice/out.xx/
+  // -> voice/manifest.xx.json, so multiple language tracks can coexist per
+  // episode without overwriting each other or the default.
   const epDir = path.join(REPO_ROOT, "episodes", episode);
-  const linesPath = path.join(epDir, "voice", "lines.json");
-  const outDir = path.join(epDir, "voice", "out");
-  const manifestPath = path.join(epDir, "voice", "manifest.json");
+  const linesFile = lang ? `lines.${lang}.json` : "lines.json";
+  const outDirName = lang ? `out.${lang}` : "out";
+  const manifestFile = lang ? `manifest.${lang}.json` : "manifest.json";
+  const linesPath = path.join(epDir, "voice", linesFile);
+  const outDir = path.join(epDir, "voice", outDirName);
+  const manifestPath = path.join(epDir, "voice", manifestFile);
 
   if (!existsSync(linesPath)) {
     console.error(`No lines file at ${linesPath}`);

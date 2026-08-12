@@ -90,13 +90,25 @@ requirement. Record in a room with soft furnishings. This matters more than any 
 
 | Source | Status | Cost | Notes |
 |---|---|---|---|
-| **Epidemic Sound** | ✅ safest | ~$10–20/mo | Unambiguous licensing, YouTube-safe, no claim risk. Worth it purely for not thinking about it. |
-| **Artlist** | ✅ | ~$10–20/mo | Same category as Epidemic. |
-| **Suno / Udio** | 🟡 works, verify terms | subscription | Fine, and fast for getting exactly the mood you want. **Commercial rights depend on paid tier — verify before publishing.** |
-| **Kevin MacLeod / YouTube Audio Library** | 🟡 free | free | Kevin MacLeod requires attribution (CC-BY) unless licensed. Overused but genuinely fine. |
+| **Freesound.org** | ✅ **decided, S02E01+** | free (CC — check per-file licence) | Tested head-to-head against ElevenLabs music generation for S02E01's cold open + Act 1 (2026-08-10) — see comparison below. Won on mood: calmer, less dramatic, fits the theory-season register. Picks go through `tools/sound-library/` so the comparison doesn't get re-run per episode. |
+| **ElevenLabs music generation** | 🟡 tested, not chosen | pay-per-generation via existing ElevenLabs sub | `/v1/music` endpoint (`tools/tts/music.mjs`) works and is fast to iterate with a text prompt, but the S02E01 test candidate read as **too dramatic** for a calm/structural register — good for episodes that actually want an emotional lift, worth revisiting for a dramatized (S01-style) episode. |
+| **Epidemic Sound** | 🟡 safest fallback | ~$10–20/mo | Unambiguous licensing, YouTube-safe, no claim risk. Not needed yet — Freesound CC0 tracks clear the same bar for free. |
+| **Artlist** | 🟡 | ~$10–20/mo | Same category as Epidemic. |
+| **Suno / Udio** | 🟡 untested here | subscription | Not tried for this project. **Commercial rights depend on paid tier — verify before publishing.** |
+| **Kevin MacLeod / YouTube Audio Library** | 🟡 free, not automatable | free | No public API — browsing/downloading is a manual step, so it wasn't included in the automated comparison. Kevin MacLeod requires attribution (CC-BY) unless licensed. |
 
-**Episode 1 music plan:** none until Act 2. Enters low under the overlay, pulled at
-"Nobody here is lying," returns at Act 4's cut to white. That's the only warm moment.
+**How the Freesound-vs-ElevenLabs test worked:** rendered the episode's picture-only
+cold-open+Act1 clip (35s), generated one candidate from each source with matching mood
+prompts ("calm, minimal, ambient, no percussion"), muxed each against the same picture
+with Remotion's vendored ffmpeg, and judged them side by side rather than as bare audio
+— mood is close to impossible to call without picture. See
+`tools/sound-library/README.md` for the resulting workflow.
+
+**S02E01 music plan:** one ambient bed (`warm-pad-drone`, CC0) under the whole episode,
+fading in over 2.5s and out over the last 2.5s — see `Episode.tsx`. **Episode 1 (S01,
+dramatized) plan:** none until Act 2. Enters low under the overlay, pulled at "Nobody
+here is lying," returns at Act 4's cut to white. That's the only warm moment — this is
+a different register from S02 and doesn't necessarily inherit the same track.
 
 ---
 
@@ -104,11 +116,15 @@ requirement. Record in a room with soft furnishings. This matters more than any 
 
 | Source | Status | Cost | Notes |
 |---|---|---|---|
-| **Freesound.org** | ✅ | free (CC — check per-file licence) | Licences vary per file, from CC0 to CC-BY. Check each one. |
-| **Epidemic Sound** | ✅ | included in subscription | If already subscribed for music, SFX come with it. |
+| **Freesound.org** | ✅ | free (CC — check per-file licence) | Licences vary per file, from CC0 to CC-BY. Check each one. Search/fetch via `tools/tts/freesound.mjs`. |
+| **ElevenLabs sound-generation** | 🟡 works, untested for fit | pay-per-generation | `/v1/sound-generation` endpoint (`tools/tts/sfx.mjs`), text-prompt based, 0.5–30s clips. Confirmed functional (a UI-click probe worked) but not yet compared against Freesound the way music was. |
+| **Epidemic Sound** | 🟡 | included in subscription | If already subscribed for music, SFX come with it. Not needed yet. |
 
 **Episode 1 needs very little:** a soft low-pitched click per box appearing, one tick per
 token step. Nothing else. Resist whooshes.
+
+Chosen SFX (any source) go through the same `tools/sound-library/` catalogue as music —
+see its README for the search → decide → `add.mjs` workflow.
 
 ---
 

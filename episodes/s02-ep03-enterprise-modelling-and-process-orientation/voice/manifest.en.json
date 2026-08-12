@@ -1,0 +1,216 @@
+{
+  "model": "eleven_multilingual_v2",
+  "generatedAt": "2026-08-11T17:46:47.208Z",
+  "lines": {
+    "n01": {
+      "hash": "d4a64a1e114e794d",
+      "speaker": "narrator",
+      "act": "cold-open",
+      "text": "Last time, this came from software. It also comes from somewhere else.",
+      "file": "voice/out.en/n01.mp3",
+      "durationSeconds": 4.232,
+      "frames30": 127,
+      "bytes": 67753
+    },
+    "n02": {
+      "hash": "edca4d04de939d21",
+      "speaker": "narrator",
+      "act": "act1",
+      "text": "Every company can be drawn as a set of functions - the jobs it has to do to create value.",
+      "file": "voice/out.en/n02.mp3",
+      "durationSeconds": 5.486,
+      "frames30": 165,
+      "bytes": 87815
+    },
+    "n03": {
+      "hash": "0bdfb687e958db28",
+      "speaker": "narrator",
+      "act": "act1",
+      "text": "These are the functions that build the product and get it to a customer - the primary work.",
+      "file": "voice/out.en/n03.mp3",
+      "durationSeconds": 4.989,
+      "frames30": 150,
+      "bytes": 79874
+    },
+    "n04": {
+      "hash": "ad57e5aa271e5522",
+      "speaker": "narrator",
+      "act": "act1",
+      "text": "Underneath, the functions that make the first row possible, without building the product themselves.",
+      "file": "voice/out.en/n04.mp3",
+      "durationSeconds": 5.59,
+      "frames30": 168,
+      "bytes": 89487
+    },
+    "n05": {
+      "hash": "9a14bcb687be861e",
+      "speaker": "narrator",
+      "act": "act1",
+      "text": "What's left over, once both rows have done their work - the difference between what it cost and what it earned.",
+      "file": "voice/out.en/n05.mp3",
+      "durationSeconds": 6.191,
+      "frames30": 186,
+      "bytes": 99100
+    },
+    "n06": {
+      "hash": "bfdb4d62bccc3a7b",
+      "speaker": "narrator",
+      "act": "act1",
+      "text": "This is a value chain. It says what a company does. It does not yet say how the work actually moves.",
+      "file": "voice/out.en/n06.mp3",
+      "durationSeconds": 6.06,
+      "frames30": 182,
+      "bytes": 97010
+    },
+    "n07": {
+      "hash": "99ff0e2237df215e",
+      "speaker": "narrator",
+      "act": "act1",
+      "text": "That gap is exactly where this chapter is headed.",
+      "file": "voice/out.en/n07.mp3",
+      "durationSeconds": 2.9,
+      "frames30": 87,
+      "bytes": 46437
+    },
+    "n08": {
+      "hash": "d608b642dc3b94d3",
+      "speaker": "narrator",
+      "act": "connective",
+      "text": "Say this box is where the actual work happens. What does work look like, up close?",
+      "file": "voice/out.en/n08.mp3",
+      "durationSeconds": 4.754,
+      "frames30": 143,
+      "bytes": 76112
+    },
+    "n09": {
+      "hash": "06f06e947583dc11",
+      "speaker": "narrator",
+      "act": "act2",
+      "text": "Break work into small, specialized pieces - one worker, one narrow task each. This is Taylorism. It built the industrial revolution.",
+      "file": "voice/out.en/n09.mp3",
+      "durationSeconds": 8.647,
+      "frames30": 260,
+      "bytes": 138388
+    },
+    "n10": {
+      "hash": "561776e6ae2cef30",
+      "speaker": "narrator",
+      "act": "act2",
+      "text": "On a factory floor, that worked. Each step was simple. A worker didn't need to know what happened before - just do the one thing in front of them.",
+      "file": "voice/out.en/n10.mp3",
+      "durationSeconds": 7.367,
+      "frames30": 221,
+      "bytes": 117908
+    },
+    "n11": {
+      "hash": "c38c386ffd51b15a",
+      "speaker": "narrator",
+      "act": "act2",
+      "text": "Modern work doesn't stay this simple. Each step here needs to know the whole case, not just its own task.",
+      "file": "voice/out.en/n11.mp3",
+      "durationSeconds": 6.478,
+      "frames30": 195,
+      "bytes": 103697
+    },
+    "n12": {
+      "hash": "9b6627ed796a468d",
+      "speaker": "narrator",
+      "act": "act2",
+      "text": "Every handoff, someone has to reconstruct the context from nothing. That reconstruction - not the task itself - is what actually costs time.",
+      "file": "voice/out.en/n12.mp3",
+      "durationSeconds": 9.456,
+      "frames30": 284,
+      "bytes": 151345
+    },
+    "n13": {
+      "hash": "9ec6d9f0e6477f31",
+      "speaker": "narrator",
+      "act": "act2",
+      "text": "Combine the small steps back into fewer, wider ones -",
+      "file": "voice/out.en/n13.mp3",
+      "durationSeconds": 3.082,
+      "frames30": 93,
+      "bytes": 49363
+    },
+    "n14": {
+      "hash": "8e48ad6837239ba6",
+      "speaker": "narrator",
+      "act": "act2",
+      "text": "- and give them to people who understand the whole case, not just one narrow piece of it.",
+      "file": "voice/out.en/n14.mp3",
+      "durationSeconds": 5.12,
+      "frames30": 154,
+      "bytes": 81964
+    },
+    "n15": {
+      "hash": "a4e47aa06e77e5f6",
+      "speaker": "narrator",
+      "act": "act3",
+      "text": "Zoom back out. A company doesn't run on one function. It runs on a handful of processes - and each one stays a closed box.",
+      "file": "voice/out.en/n15.mp3",
+      "durationSeconds": 7.393,
+      "frames30": 222,
+      "bytes": 118326
+    },
+    "n16": {
+      "hash": "4991b0887b49d7f1",
+      "speaker": "narrator",
+      "act": "act3",
+      "text": "None of these are opened up. What matters here is only what crosses the line between them.",
+      "file": "voice/out.en/n16.mp3",
+      "durationSeconds": 5.224,
+      "frames30": 157,
+      "bytes": 83635
+    },
+    "n17": {
+      "hash": "b5d5f4899dd73177",
+      "speaker": "narrator",
+      "act": "act3",
+      "text": "This is as deep as the org level goes - a name, a manager, what comes in, what goes out. Not a flowchart of how the work happens inside.",
+      "file": "voice/out.en/n17.mp3",
+      "durationSeconds": 8.829,
+      "frames30": 265,
+      "bytes": 141314
+    },
+    "n18": {
+      "hash": "d39a932211fd5e61",
+      "speaker": "narrator",
+      "act": "act3",
+      "text": "Open it further, and you're no longer describing the company - you're describing one process's own internal work. Different question, different level.",
+      "file": "voice/out.en/n18.mp3",
+      "durationSeconds": 9.404,
+      "frames30": 283,
+      "bytes": 150509
+    },
+    "n19": {
+      "hash": "fd82eb7e457178d0",
+      "speaker": "narrator",
+      "act": "act3",
+      "text": "What happens at these lines is, more than almost anything inside the boxes, what the business is actually judged on.",
+      "file": "voice/out.en/n19.mp3",
+      "durationSeconds": 6.713,
+      "frames30": 202,
+      "bytes": 107459
+    },
+    "n20": {
+      "hash": "4019aac561513ae3",
+      "speaker": "narrator",
+      "act": "close",
+      "text": "A shape for what the company does. A reason the work has to be grouped coarser than Taylor would have grouped it. And a boundary around each process that stays deliberately closed.",
+      "file": "voice/out.en/n20.mp3",
+      "durationSeconds": 9.822,
+      "frames30": 295,
+      "bytes": 157196
+    },
+    "n21": {
+      "hash": "aede05232f8d151a",
+      "speaker": "narrator",
+      "act": "close",
+      "text": "Different road than last time. Same destination.",
+      "file": "voice/out.en/n21.mp3",
+      "durationSeconds": 2.952,
+      "frames30": 89,
+      "bytes": 47273
+    }
+  }
+}

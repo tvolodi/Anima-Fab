@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "studio": "remotion studio src/index.ts",
+    "sound": "node -e \"const fs=require('fs');fs.mkdirSync('public/music',{recursive:true});fs.copyFileSync('../../assets/sound-library/music/warm-pad-drone.mp3','public/music/warm-pad-drone.mp3');console.log('synced warm-pad-drone.mp3')\"",
     "render": "remotion render src/index.ts Episode out/s02-ep01.mp4",
     "still": "remotion still src/index.ts",
     "typecheck": "tsc --noEmit"

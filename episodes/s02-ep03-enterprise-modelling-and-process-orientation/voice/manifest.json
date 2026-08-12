@@ -1,0 +1,216 @@
+{
+  "model": "eleven_v3",
+  "generatedAt": "2026-08-11T17:45:19.674Z",
+  "lines": {
+    "n01": {
+      "hash": "b6aa2c599502d0e0",
+      "speaker": "narrator",
+      "act": "cold-open",
+      "text": "В прошлый раз это шло от программного обеспечения. Но у этого есть и другой источник.",
+      "file": "voice/out/n01.mp3",
+      "durationSeconds": 5.904,
+      "frames30": 178,
+      "bytes": 94502
+    },
+    "n02": {
+      "hash": "0ab0ae13c4ca2e96",
+      "speaker": "narrator",
+      "act": "act1",
+      "text": "Любую компанию можно представить как набор функций — работ, которые нужно сделать, чтобы создать ценность.",
+      "file": "voice/out/n02.mp3",
+      "durationSeconds": 7.654,
+      "frames30": 230,
+      "bytes": 122506
+    },
+    "n03": {
+      "hash": "a02e0a0f64347dcf",
+      "speaker": "narrator",
+      "act": "act1",
+      "text": "Это функции, которые создают продукт и доставляют его клиенту — основная деятельность.",
+      "file": "voice/out/n03.mp3",
+      "durationSeconds": 6.87,
+      "frames30": 207,
+      "bytes": 109967
+    },
+    "n04": {
+      "hash": "621bc4b9543ddd0c",
+      "speaker": "narrator",
+      "act": "act1",
+      "text": "А под ними — функции, которые делают первую строку возможной, сами при этом продукт не создавая.",
+      "file": "voice/out/n04.mp3",
+      "durationSeconds": 7.993,
+      "frames30": 240,
+      "bytes": 127939
+    },
+    "n05": {
+      "hash": "dd019f55e740efad",
+      "speaker": "narrator",
+      "act": "act1",
+      "text": "То, что остаётся, когда обе строки сделали своё дело — разница между тем, что это стоило, и тем, что это принесло.",
+      "file": "voice/out/n05.mp3",
+      "durationSeconds": 9.665,
+      "frames30": 290,
+      "bytes": 154688
+    },
+    "n06": {
+      "hash": "d01f7dc25c639be3",
+      "speaker": "narrator",
+      "act": "act1",
+      "text": "Это цепочка ценности. Она говорит, что компания делает. Но пока не говорит, как именно движется работа.",
+      "file": "voice/out/n06.mp3",
+      "durationSeconds": 8.62,
+      "frames30": 259,
+      "bytes": 137970
+    },
+    "n07": {
+      "hash": "6bbf7523e0de389b",
+      "speaker": "narrator",
+      "act": "act1",
+      "text": "Именно на этот пробел и нацелена эта глава.",
+      "file": "voice/out/n07.mp3",
+      "durationSeconds": 3.5,
+      "frames30": 106,
+      "bytes": 56050
+    },
+    "n08": {
+      "hash": "f4f60fd736411c84",
+      "speaker": "narrator",
+      "act": "connective",
+      "text": "Допустим, вот здесь и происходит настоящая работа. Как выглядит эта работа вблизи?",
+      "file": "voice/out/n08.mp3",
+      "durationSeconds": 6.296,
+      "frames30": 189,
+      "bytes": 100772
+    },
+    "n09": {
+      "hash": "78989918a153d94f",
+      "speaker": "narrator",
+      "act": "act2",
+      "text": "Разбить работу на мелкие, узкоспециализированные операции — один работник, одна узкая задача. Это тейлоризм. Он породил промышленную революцию.",
+      "file": "voice/out/n09.mp3",
+      "durationSeconds": 12.617,
+      "frames30": 379,
+      "bytes": 201918
+    },
+    "n10": {
+      "hash": "d08d562f9bd12185",
+      "speaker": "narrator",
+      "act": "act2",
+      "text": "На заводском конвейере это работало. Каждый шаг был прост. Работнику не нужно было знать, что было раньше — только сделать то, что перед ним.",
+      "file": "voice/out/n10.mp3",
+      "durationSeconds": 10.867,
+      "frames30": 327,
+      "bytes": 173915
+    },
+    "n11": {
+      "hash": "7a94e99bb09a66a3",
+      "speaker": "narrator",
+      "act": "act2",
+      "text": "Современная работа устроена иначе. Каждый шаг здесь должен знать весь случай целиком, а не только свою узкую задачу.",
+      "file": "voice/out/n11.mp3",
+      "durationSeconds": 8.934,
+      "frames30": 269,
+      "bytes": 142986
+    },
+    "n12": {
+      "hash": "e90b2a1537339094",
+      "speaker": "narrator",
+      "act": "act2",
+      "text": "[matter-of-fact] При каждой передаче кто-то заново восстанавливает контекст с нуля. Именно это восстановление — не сама задача — и съедает время.",
+      "file": "voice/out/n12.mp3",
+      "durationSeconds": 10.214,
+      "frames30": 307,
+      "bytes": 163466
+    },
+    "n13": {
+      "hash": "11d6d7883c450281",
+      "speaker": "narrator",
+      "act": "act2",
+      "text": "Собрать мелкие шаги обратно — в меньшее число более широких —",
+      "file": "voice/out/n13.mp3",
+      "durationSeconds": 5.277,
+      "frames30": 159,
+      "bytes": 84471
+    },
+    "n14": {
+      "hash": "671658d17734dbf7",
+      "speaker": "narrator",
+      "act": "act2",
+      "text": "— и отдать их людям, которые понимают случай целиком, а не одну узкую часть.",
+      "file": "voice/out/n14.mp3",
+      "durationSeconds": 6.06,
+      "frames30": 182,
+      "bytes": 97010
+    },
+    "n15": {
+      "hash": "25d0cb15557e7192",
+      "speaker": "narrator",
+      "act": "act3",
+      "text": "Вернёмся к общей картине. Компания живёт не одной функцией. Она держится на горстке процессов — и каждый остаётся закрытой коробкой.",
+      "file": "voice/out/n15.mp3",
+      "durationSeconds": 9.352,
+      "frames30": 281,
+      "bytes": 149673
+    },
+    "n16": {
+      "hash": "807890ce9b00ee4a",
+      "speaker": "narrator",
+      "act": "act3",
+      "text": "Ни один из них не открыт изнутри. Важно только то, что пересекает границу между ними.",
+      "file": "voice/out/n16.mp3",
+      "durationSeconds": 6.949,
+      "frames30": 209,
+      "bytes": 111221
+    },
+    "n17": {
+      "hash": "33e5def38aaae96d",
+      "speaker": "narrator",
+      "act": "act3",
+      "text": "Это предел, до которого доходит уровень компании — имя, менеджер, что входит, что выходит. Не блок-схема того, как работа устроена внутри.",
+      "file": "voice/out/n17.mp3",
+      "durationSeconds": 10.057,
+      "frames30": 302,
+      "bytes": 160958
+    },
+    "n18": {
+      "hash": "d69e9b1c9aed6f38",
+      "speaker": "narrator",
+      "act": "act3",
+      "text": "Откройте его глубже — и вы уже описываете не компанию, а внутреннюю работу одного процесса. Другой вопрос, другой уровень.",
+      "file": "voice/out/n18.mp3",
+      "durationSeconds": 10.292,
+      "frames30": 309,
+      "bytes": 164719
+    },
+    "n19": {
+      "hash": "9160e171ece54438",
+      "speaker": "narrator",
+      "act": "act3",
+      "text": "То, что происходит на этих линиях — больше, чем почти всё внутри коробок — и есть то, по чему на самом деле судят бизнес.",
+      "file": "voice/out/n19.mp3",
+      "durationSeconds": 9.195,
+      "frames30": 276,
+      "bytes": 147165
+    },
+    "n20": {
+      "hash": "d5b9d1610858f81f",
+      "speaker": "narrator",
+      "act": "close",
+      "text": "Форма того, что делает компания. Причина, по которой работу нужно группировать крупнее, чем группировал бы Тейлор. И граница вокруг каждого процесса, которая остаётся закрытой намеренно.",
+      "file": "voice/out/n20.mp3",
+      "durationSeconds": 13.192,
+      "frames30": 396,
+      "bytes": 211113
+    },
+    "n21": {
+      "hash": "5f57839d852b0ee3",
+      "speaker": "narrator",
+      "act": "close",
+      "text": "Другая дорога, чем в прошлый раз. Тот же пункт назначения.",
+      "file": "voice/out/n21.mp3",
+      "durationSeconds": 4.389,
+      "frames30": 132,
+      "bytes": 70261
+    }
+  }
+}

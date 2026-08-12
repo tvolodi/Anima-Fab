@@ -1,0 +1,41 @@
+{
+  "$comment": "S02 Episode 2 narration. Line ids are stable - timing.ts references them. Do not renumber; append instead. Square-bracket audio tags are eleven_v3 delivery direction and are NOT spoken - see docs/VOICE.md. First narrated S02 episode (ep01 stayed silent by design) - see memory 's02-narration-and-music-policy': single neutral documentary narrator, not a character, so this reuses the SAME voice as ep01's narrator role rather than casting a new one.",
+  "language": "ru",
+  "model": "eleven_v3",
+  "$casting": "Single speaker, no cast. Same narrator voice/settings as ep01-nobody-has-seen-it's 'narrator' role, reused deliberately for series continuity - see docs/VOICE.md's cast table. High stability (0.85) again suppresses the voice's own 'warm' label; this episode's register is drier and more textbook than ep01's narrator moments, if anything, since there is no scene or character reaction to play against.",
+  "speakers": {
+    "narrator": {
+      "voiceId": "ymDCYd8puC7gYjxIamPt",
+      "voiceName": "Marina - Soft, Clear and Warm (ru-RU)",
+      "note": "Documentary/textbook register. Explains, never dramatizes. No character, no reaction to on-screen events beyond stating what they mean. Same voice as ep01's narrator for series consistency, but the delivery here should read even more even-keeled than ep01 - there is no joke to land flat, just an argument to state clearly.",
+      "settings": { "stability": 0.85, "similarity_boost": 0.75, "style": 0.0 }
+    }
+  },
+  "lines": [
+    { "id": "n01", "speaker": "narrator", "act": "cold-open", "text": "Когда-то всё это жило в одном месте." },
+
+    { "id": "n02", "speaker": "narrator", "act": "act1", "text": "Каждое приложение говорило с оборудованием напрямую." },
+    { "id": "n03", "speaker": "narrator", "act": "act1", "text": "Одна задача — вынесена наружу. Одна стабильная связь — оставлена внутрь." },
+
+    { "id": "n04", "speaker": "narrator", "act": "act2", "text": "Потом — где хранить данные?" },
+    { "id": "n05", "speaker": "narrator", "act": "act2", "text": "Потом — как человеку вообще этим пользоваться?" },
+    { "id": "n06", "speaker": "narrator", "act": "act2", "text": "Один и тот же приём — трижды подряд. Вынести функцию наружу, оставить одну стабильную связь." },
+
+    { "id": "n07", "speaker": "narrator", "act": "act3", "text": "Разные отделы. Разные копии одного и того же факта." },
+    { "id": "n08", "speaker": "narrator", "act": "act3", "text": "Изменишь один — два других об этом не узнают." },
+
+    { "id": "n09", "speaker": "narrator", "act": "act4", "text": "Одна общая база данных. Одна версия правды." },
+    { "id": "n10", "speaker": "narrator", "act": "act4", "text": "[matter-of-fact] Тот же приём, что и с операционной системой. Просто в другом масштабе." },
+
+    { "id": "n11", "speaker": "narrator", "act": "act5", "text": "Потом появляются новые системы. От других поставщиков." },
+    { "id": "n12", "speaker": "narrator", "act": "act5", "text": "Та же проблема разрозненности. Уровнем выше." },
+
+    { "id": "n13", "speaker": "narrator", "act": "act6", "text": "Соединить каждую пару напрямую." },
+    { "id": "n14", "speaker": "narrator", "act": "act6", "text": "Шесть систем. Пятнадцать связей. Каждая новая система добавляет больше связей, чем предыдущая." },
+
+    { "id": "n15", "speaker": "narrator", "act": "act7", "text": "Те же шесть систем. Теперь — один общий узел." },
+    { "id": "n16", "speaker": "narrator", "act": "act7", "text": "Зависимость никуда не делась. Она переехала внутрь узла." },
+
+    { "id": "n17", "speaker": "narrator", "act": "close", "text": "Каждое решение до сих пор лишь перемещало связанность. Ни одно не сделало видимым сам процесс." }
+  ]
+}

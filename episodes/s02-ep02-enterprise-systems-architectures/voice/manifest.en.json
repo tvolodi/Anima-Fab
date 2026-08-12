@@ -1,0 +1,176 @@
+{
+  "model": "eleven_multilingual_v2",
+  "generatedAt": "2026-08-11T11:34:01.942Z",
+  "lines": {
+    "n01": {
+      "hash": "3da3a6176b7e547c",
+      "speaker": "narrator",
+      "act": "cold-open",
+      "text": "Everything used to live in one place.",
+      "file": "voice/out.en/n01.mp3",
+      "durationSeconds": 1.959,
+      "frames30": 59,
+      "bytes": 31391
+    },
+    "n02": {
+      "hash": "9cfe4a9bec4fedaa",
+      "speaker": "narrator",
+      "act": "act1",
+      "text": "Every application talked to the hardware directly.",
+      "file": "voice/out.en/n02.mp3",
+      "durationSeconds": 2.795,
+      "frames30": 84,
+      "bytes": 44765
+    },
+    "n03": {
+      "hash": "f07553bb8c4d9f9e",
+      "speaker": "narrator",
+      "act": "act1",
+      "text": "One job, pulled out. One stable line left in.",
+      "file": "voice/out.en/n03.mp3",
+      "durationSeconds": 2.717,
+      "frames30": 82,
+      "bytes": 43511
+    },
+    "n04": {
+      "hash": "930e07c960996ee6",
+      "speaker": "narrator",
+      "act": "act2",
+      "text": "Then: where does the data live?",
+      "file": "voice/out.en/n04.mp3",
+      "durationSeconds": 1.933,
+      "frames30": 58,
+      "bytes": 30973
+    },
+    "n05": {
+      "hash": "ff2b19e8ca75cab8",
+      "speaker": "narrator",
+      "act": "act2",
+      "text": "Then: how does a person actually use it?",
+      "file": "voice/out.en/n05.mp3",
+      "durationSeconds": 2.482,
+      "frames30": 75,
+      "bytes": 39750
+    },
+    "n06": {
+      "hash": "fbd49f7e9c35eba5",
+      "speaker": "narrator",
+      "act": "act2",
+      "text": "The same move, three times over. Pull the function out, keep one stable line back.",
+      "file": "voice/out.en/n06.mp3",
+      "durationSeconds": 4.702,
+      "frames30": 142,
+      "bytes": 75276
+    },
+    "n07": {
+      "hash": "a9322341b3c9c0fe",
+      "speaker": "narrator",
+      "act": "act3",
+      "text": "Different departments. Different copies of the same fact.",
+      "file": "voice/out.en/n07.mp3",
+      "durationSeconds": 3.187,
+      "frames30": 96,
+      "bytes": 51035
+    },
+    "n08": {
+      "hash": "b66bd5e3f8869e6a",
+      "speaker": "narrator",
+      "act": "act3",
+      "text": "Change one, and the other two don't know.",
+      "file": "voice/out.en/n08.mp3",
+      "durationSeconds": 2.064,
+      "frames30": 62,
+      "bytes": 33062
+    },
+    "n09": {
+      "hash": "0a198ca9caa00396",
+      "speaker": "narrator",
+      "act": "act4",
+      "text": "One shared database. One version of the truth.",
+      "file": "voice/out.en/n09.mp3",
+      "durationSeconds": 2.717,
+      "frames30": 82,
+      "bytes": 43511
+    },
+    "n10": {
+      "hash": "cf5304acc17dc02e",
+      "speaker": "narrator",
+      "act": "act4",
+      "text": "The same move as the operating system. Just at a different scale.",
+      "file": "voice/out.en/n10.mp3",
+      "durationSeconds": 3.5,
+      "frames30": 106,
+      "bytes": 56050
+    },
+    "n11": {
+      "hash": "afffea1d4cce9ce2",
+      "speaker": "narrator",
+      "act": "act5",
+      "text": "Then new systems arrive. From other vendors.",
+      "file": "voice/out.en/n11.mp3",
+      "durationSeconds": 2.769,
+      "frames30": 84,
+      "bytes": 44347
+    },
+    "n12": {
+      "hash": "0cdc79a64f99e129",
+      "speaker": "narrator",
+      "act": "act5",
+      "text": "The same silo problem. One level up.",
+      "file": "voice/out.en/n12.mp3",
+      "durationSeconds": 2.299,
+      "frames30": 69,
+      "bytes": 36824
+    },
+    "n13": {
+      "hash": "2034a6323299e87d",
+      "speaker": "narrator",
+      "act": "act6",
+      "text": "Wire every pair directly.",
+      "file": "voice/out.en/n13.mp3",
+      "durationSeconds": 1.593,
+      "frames30": 48,
+      "bytes": 25539
+    },
+    "n14": {
+      "hash": "eb712d72e9243fb5",
+      "speaker": "narrator",
+      "act": "act6",
+      "text": "Six systems. Fifteen connections. Every new system adds more wiring than the last one.",
+      "file": "voice/out.en/n14.mp3",
+      "durationSeconds": 5.277,
+      "frames30": 159,
+      "bytes": 84471
+    },
+    "n15": {
+      "hash": "ab88c200cbab7d17",
+      "speaker": "narrator",
+      "act": "act7",
+      "text": "The same six systems. Now, one shared hub.",
+      "file": "voice/out.en/n15.mp3",
+      "durationSeconds": 2.664,
+      "frames30": 80,
+      "bytes": 42675
+    },
+    "n16": {
+      "hash": "a0ab47059e089876",
+      "speaker": "narrator",
+      "act": "act7",
+      "text": "The dependency didn't disappear. It moved inside the hub.",
+      "file": "voice/out.en/n16.mp3",
+      "durationSeconds": 3.135,
+      "frames30": 95,
+      "bytes": 50199
+    },
+    "n17": {
+      "hash": "1a26e4267b945d66",
+      "speaker": "narrator",
+      "act": "close",
+      "text": "Every fix so far has only moved where the coupling lives. None of them made the process itself visible.",
+      "file": "voice/out.en/n17.mp3",
+      "durationSeconds": 6.008,
+      "frames30": 181,
+      "bytes": 96174
+    }
+  }
+}

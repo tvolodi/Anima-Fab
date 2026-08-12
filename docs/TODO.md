@@ -1,6 +1,6 @@
 # State of the workspace
 
-What works, what is stubbed, what is known-wrong. Written 2026-08-09.
+What works, what is stubbed, what is known-wrong. Written 2026-08-09, updated 2026-08-12.
 
 ## Verified working
 
@@ -9,6 +9,18 @@ What works, what is stubbed, what is known-wrong. Written 2026-08-09.
 - Episode 1 registers 4 compositions; `remotion compositions` lists them
 - Stills render. Cyrillic renders correctly (checked visually)
 - Chrome headless shell downloaded and cached
+- **S02E03 ("The Business Side of the Same Question") built, rendered, and
+  Movie-Critiqued 2026-08-12.** `out/s02-ep03.mp4` + `-en.mp4` exist, typecheck
+  clean, visual-regression baselines set for both languages. Runtime 3:43 vs.
+  the script's 2:30-3:00 target - accepted deliberately (never truncate real
+  narration, never compress Act 2's dramatized centerpiece). Same known
+  EN/RU timing-master tradeoff as `s02-ep02` (cues derived from the Russian
+  manifest only; English clips finish early within their Russian-sized slot) -
+  not a regression, an inherited, documented convention. **Still needs the
+  Producer's actual watch-through** - the Critic's stills-only pass cannot
+  confirm audio delivery, the Act 1 dotted-arrow fade reads correctly at 12%
+  opacity on a real screen, or whether the English pacing gap is noticeable
+  in practice.
 
 ## Known-wrong, needs your eye
 
@@ -80,10 +92,19 @@ matches the script's target. That is a good sign the script is the right length.
 - Act 4 hard-cuts to white and «Кто сообщает ИТ» - the box in nobody's telling -
   lands after the question.
 
-**Trap worth knowing:** act components read ABSOLUTE cue frames, so they must NOT
-be wrapped in `<Sequence>` (it rebases `useCurrentFrame()` to local time). Use the
-local `Window` helper instead. This bug rendered the empty fourth lane as a black
-frame and was invisible from the code.
+**Trap worth knowing:** act components read ABSOLUTE cue frames, so inside `Episode`
+they must NOT be wrapped in `<Sequence>` (it rebases `useCurrentFrame()` to local
+time) - use the local `Window` helper instead. This bug rendered the empty fourth
+lane as a black frame and was invisible from the code.
+
+**Related, since fixed:** the standalone per-act Studio compositions (`Act3`, `Act4`,
+etc. in `Root.tsx`) are the opposite case - THERE a `Sequence` offset is exactly what's
+needed, because scrubbing one from local frame 0 previously showed nothing correct
+(every absolute-cue interpolation read frame numbers far outside its range and
+clamped). Fixed via `src/ActPreview.tsx`, which wraps each standalone act in a
+`Sequence` shifted back to that act's real start. `Act2Overlay` is the one exception -
+its `ACT2.*` timing constants are already act2-local, so it's intentionally left
+unwrapped. Same fix applied to s02-ep01-introduction, where it was first found.
 
 ## Not built yet
 - **Audio: narration DONE, mix not built.** All 40 lines synthesised with

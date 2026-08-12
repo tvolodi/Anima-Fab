@@ -1,0 +1,111 @@
+{
+  "$comment": "Curated sound/music library for the whole project - see README.md in this directory. Entries here are DECIDED, not exploratory candidates (those live as throwaway files in tools/tts/sfx-out/, gitignored). Add an entry only after a track has actually been chosen for an episode, via tools/sound-library/add.mjs.",
+  "source": "freesound",
+  "entries": {
+    "warm-pad-drone": {
+      "kind": "music",
+      "freesoundId": 854842,
+      "name": "Warm Pad Essentials Drone by Mantice",
+      "author": "bassimat",
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "licenseShort": "CC0",
+      "durationSeconds": 300,
+      "moodTags": [
+        "calm",
+        "ambient",
+        "minimal",
+        "no-percussion",
+        "analytical",
+        "understated"
+      ],
+      "file": "assets/sound-library/music/warm-pad-drone.mp3",
+      "usedIn": [
+        "s02-ep01-introduction"
+      ],
+      "notes": "Won the ElevenLabs-vs-Freesound comparison for S02E01's cold open + Act 1 - EL's generated candidate read as too dramatic for the calm/structural theory-season register. CC0, no attribution required. Full track is 300s; episodes trim what they need.",
+      "addedAt": "2026-08-10"
+    },
+    "atmospheric-piano": {
+      "kind": "music",
+      "freesoundId": 865371,
+      "name": "Atmospheric Piano Soundtrack",
+      "author": "Akkaittou",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "licenseShort": "CC-BY",
+      "durationSeconds": 82.96,
+      "moodTags": [
+        "calm",
+        "piano",
+        "analytical",
+        "understated"
+      ],
+      "file": "assets/sound-library/music/atmospheric-piano.mp3",
+      "usedIn": [
+        "s02-ep02-enterprise-systems-architectures"
+      ],
+      "notes": "S02E02 pick. CC-BY - attribution required if published (Akkaittou). Approved by user 2026-08-11 for the extraction acts (1-2), calmer register.",
+      "addedAt": "2026-08-11"
+    },
+    "jazzy-ambient-piano": {
+      "kind": "music",
+      "freesoundId": 414557,
+      "name": "Jazzy Ambient Piano (Mansion)",
+      "author": "Hakren",
+      "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+      "licenseShort": "CC0",
+      "durationSeconds": 115.48,
+      "moodTags": [
+        "calm",
+        "piano",
+        "jazzy",
+        "analytical"
+      ],
+      "file": "assets/sound-library/music/jazzy-ambient-piano.mp3",
+      "usedIn": [
+        "s02-ep02-enterprise-systems-architectures"
+      ],
+      "notes": "S02E02 pick. CC0, no attribution needed. Approved by user 2026-08-11.",
+      "addedAt": "2026-08-11"
+    },
+    "mystic-minimal-loop": {
+      "kind": "music",
+      "freesoundId": 474682,
+      "name": "Mystic Minimalistic Loop",
+      "author": "The-Sacha-Rush",
+      "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+      "licenseShort": "CC0",
+      "durationSeconds": 128,
+      "moodTags": [
+        "calm",
+        "minimal",
+        "electronic",
+        "understated"
+      ],
+      "file": "assets/sound-library/music/mystic-minimal-loop.mp3",
+      "usedIn": [
+        "s02-ep02-enterprise-systems-architectures"
+      ],
+      "notes": "S02E02 pick, slightly more forward-moving than the piano tracks - for Acts 6-7 (mesh/count-up/hub, the episode's busiest beats). CC0, no attribution needed. Approved by user 2026-08-11.",
+      "addedAt": "2026-08-11"
+    },
+    "piano-jam-mei": {
+      "kind": "music",
+      "freesoundId": 553125,
+      "name": "Piano Jam Mei 18.m4a",
+      "author": "Sluri6",
+      "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+      "licenseShort": "CC0",
+      "durationSeconds": 196.975,
+      "moodTags": [
+        "piano",
+        "rich",
+        "melodic",
+        "held-for-later"
+      ],
+      "file": "assets/sound-library/music/piano-jam-mei.mp3",
+      "usedIn": [],
+      "notes": "HELD, not currently used - too rich/melodic for BPM's dry, understated register per user (2026-08-11): 'too rich to compete with dull BPM material'. Good candidate for a future episode/project that can carry a fuller sound. Do not auto-assign to a BPM episode without re-checking this note.",
+      "addedAt": "2026-08-11"
+    }
+  }
+}

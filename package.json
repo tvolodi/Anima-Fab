@@ -9,10 +9,13 @@
     "ep01:render": "pnpm --filter ep01-nobody-has-seen-it render",
     "s02ep01": "pnpm --filter s02-ep01-introduction studio",
     "s02ep01:render": "pnpm --filter s02-ep01-introduction render",
-    "typecheck": "pnpm -r --parallel typecheck"
+    "typecheck": "pnpm -r --parallel typecheck",
+    "visual-check": "node tools/visual-regression/check.mjs"
   },
   "devDependencies": {
     "@types/node": "^22.10.2",
+    "pixelmatch": "^7.2.0",
+    "pngjs": "^7.0.0",
     "typescript": "^5.7.2"
   },
   "packageManager": "pnpm@10.28.1"

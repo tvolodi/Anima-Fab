@@ -1,0 +1,36 @@
+{
+  "$comment": "Key frames to visually regression-test per episode. One entry per episode; each frame becomes one baseline PNG in baselines/<episode>/<composition>__f<frame>[__<lang-or-props-suffix>].png. Pick frames at act boundaries and known-risky beats (e.g. 'everything just extracted, is anything still visible') - see tools/visual-regression/README.md.",
+  "episodes": {
+    "s02-ep02-enterprise-systems-architectures": {
+      "composition": "Episode",
+      "frames": [
+        { "frame": 0, "label": "cold-open" },
+        { "frame": 550, "label": "act1-mid-extraction" },
+        { "frame": 950, "label": "act1-end-before-act2" },
+        { "frame": 1700, "label": "act2-end-all-extracted" },
+        { "frame": 2000, "label": "act3-boxes-desync" },
+        { "frame": 2700, "label": "act4-erp-merged" },
+        { "frame": 3350, "label": "act5-scm-crm-in" },
+        { "frame": 4100, "label": "act6-mesh-full" },
+        { "frame": 5100, "label": "act7-hub-tangle" },
+        { "frame": 5950, "label": "close-end-card" }
+      ]
+    },
+    "s02-ep03-enterprise-modelling-and-process-orientation": {
+      "composition": "Episode",
+      "frames": [
+        { "frame": 0, "label": "cold-open" },
+        { "frame": 1800, "label": "act1-value-chain-complete" },
+        { "frame": 2100, "label": "connective-operations-enlarged" },
+        { "frame": 2700, "label": "act2-factory-floor-brisk" },
+        { "frame": 3400, "label": "act2-reload-halt" },
+        { "frame": 3880, "label": "act2-merge-resolved" },
+        { "frame": 4150, "label": "act2-clean-run-knowledge-worker" },
+        { "frame": 4600, "label": "act3-landscape-in" },
+        { "frame": 5150, "label": "act3-card-open" },
+        { "frame": 5400, "label": "act3-card-closed" },
+        { "frame": 6600, "label": "close-end-card" }
+      ]
+    }
+  }
+}

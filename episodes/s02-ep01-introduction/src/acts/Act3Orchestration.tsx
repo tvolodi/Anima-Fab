@@ -102,10 +102,25 @@ export const Act3Orchestration: React.FC = () => {
 
   return (
     <AbsoluteFill style={{ backgroundColor: colors.BG }}>
+      {/* Positioned with top/left + a scale-only transform, NOT a combined
+          translate()-scale() string. That combined form was the actual bug
+          here: with no transformOrigin set, CSS defaults to "center center"
+          of the div's own (unscaled) content box, so scale(0.66) shrank the
+          diagram toward ITS OWN center rather than toward RESELLER_POS -
+          shifting every node ~350px off from what nodeAbsolute() computed
+          for the message-flow lines and controller box. Confirmed by
+          dumping resellerLaid's actual node.x values on-screen and finding
+          they matched the intended math exactly, while the rendered
+          ProcessView content did not - see git history for the debug
+          markers used to isolate this. Same fix already proven correct in
+          Act1Coordination.tsx and Act4StableInterface.tsx. */}
       <div
         style={{
           position: "absolute",
-          transform: `translate(${RESELLER_POS.x}px, ${RESELLER_POS.y}px) scale(${SCALE})`,
+          top: RESELLER_POS.y,
+          left: RESELLER_POS.x,
+          transform: `scale(${SCALE})`,
+          transformOrigin: "top left",
         }}
       >
         <div style={{ fontFamily: typo.FONT_STACK, fontSize: 20, letterSpacing: "0.08em", color: colors.SPEAKER.blue.line, opacity: resellerLabelOpacity, marginBottom: 10 }}>
@@ -117,7 +132,10 @@ export const Act3Orchestration: React.FC = () => {
       <div
         style={{
           position: "absolute",
-          transform: `translate(${BUYER_POS.x}px, ${BUYER_POS.y}px) scale(${SCALE})`,
+          top: BUYER_POS.y,
+          left: BUYER_POS.x,
+          transform: `scale(${SCALE})`,
+          transformOrigin: "top left",
           opacity: buyerIn,
         }}
       >
@@ -169,7 +187,16 @@ export const Act3Orchestration: React.FC = () => {
           opacity={twoBoxesOpacity * 0.7}
         />
 
-        {/* Message flow: dotted arcs with a travelling pulse, relay-style. */}
+        {/* Message flow: dotted lines with a travelling pulse, relay-style.
+            Every link connects same-column nodes on the two diagrams, so
+            these are near-vertical lines crossing the gap between lanes -
+            with nothing labelling them, a mid-flight pulse read as a
+            random floating dot with no visible line under it (caught by
+            rendering a real frame mid-pulse and looking, not guessed).
+            Fix: line stays visible for the pulse's full duration (not just
+            a 0.2s pre-fade), higher contrast, and the link's own label
+            (order/invoice/payment/products) rides next to the pulse so
+            it's identifiable while in flight. */}
         {messageFlow.map((link, i) => {
           const from = link.from.startsWith("b-")
             ? nodeAbsolute(BUYER_POS, buyerLaid, link.from)
@@ -179,16 +206,34 @@ export const Act3Orchestration: React.FC = () => {
             : nodeAbsolute(RESELLER_POS, resellerLaid, link.to);
 
           const pulseStart = messagePulseStart + i * PULSE_GAP;
-          const pulseT = interpolate(frame, [pulseStart, pulseStart + s(0.9)], [0, 1], {
+          const pulseEnd = pulseStart + s(0.9);
+          const pulseT = interpolate(frame, [pulseStart, pulseEnd], [0, 1], {
             extrapolateLeft: "clamp",
             extrapolateRight: "clamp",
           });
-          const lineOpacity = interpolate(frame, [pulseStart - s(0.2), pulseStart], [0, 0.5], {
-            extrapolateLeft: "clamp",
-            extrapolateRight: "clamp",
-          });
+          // Line fades in ahead of its pulse and stays visible through it,
+          // then fades fully back out - NOT just down to a lingering 0.35,
+          // which was a real bug: with extrapolateRight "clamp" and no
+          // keyframe returning to 0, every message line stayed ghosted in
+          // at 0.35 opacity for the rest of the episode after its pulse
+          // fired once. Caught by rendering a frame well after Act 3's
+          // pulses finish and finding a stray line still on screen.
+          const lineOpacity = interpolate(
+            frame,
+            [pulseStart - s(0.3), pulseStart, pulseEnd, pulseEnd + s(0.6)],
+            [0, 0.85, 0.85, 0],
+            { extrapolateLeft: "clamp", extrapolateRight: "clamp" },
+          );
+          const labelOpacity = interpolate(
+            frame,
+            [pulseStart, pulseStart + s(0.15), pulseEnd, pulseEnd + s(0.3)],
+            [0, 1, 1, 0],
+            { extrapolateLeft: "clamp", extrapolateRight: "clamp" },
+          );
           const px = from.x + (to.x - from.x) * pulseT;
           const py = from.y + (to.y - from.y) * pulseT;
+          const midX = (from.x + to.x) / 2;
+          const midY = (from.y + to.y) / 2;
 
           return (
             <g key={link.label}>
@@ -198,13 +243,26 @@ export const Act3Orchestration: React.FC = () => {
                 x2={to.x}
                 y2={to.y}
                 stroke={colors.SPEAKER.neutral.line}
-                strokeWidth={1.5}
-                strokeDasharray="3 6"
+                strokeWidth={2}
+                strokeDasharray="4 5"
                 opacity={lineOpacity}
               />
               {pulseT > 0 && pulseT < 1 && (
-                <circle cx={px} cy={py} r={7} fill={colors.TOKEN_BODY} opacity={0.9} />
+                <>
+                  <circle cx={px} cy={py} r={10} fill={colors.TOKEN_BODY} opacity={0.25} />
+                  <circle cx={px} cy={py} r={6} fill={colors.TOKEN_BODY} stroke={colors.SPEAKER.neutral.line} strokeWidth={1.5} />
+                </>
               )}
+              <text
+                x={midX + 14}
+                y={midY}
+                fill={colors.SPEAKER.neutral.text}
+                fontFamily={typo.FONT_STACK}
+                fontSize={16}
+                opacity={labelOpacity}
+              >
+                {link.label}
+              </text>
             </g>
           );
         })}

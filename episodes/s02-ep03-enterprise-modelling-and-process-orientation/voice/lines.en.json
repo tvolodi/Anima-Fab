@@ -1,0 +1,43 @@
+{
+  "$comment": "S02 Episode 3 narration, ENGLISH track. On-screen text is English (season convention), so this sits alongside lines.json's Russian track, which stays the timing master (see timing.ts). Same line ids as lines.json so cue names map 1:1.",
+  "language": "en",
+  "model": "eleven_multilingual_v2",
+  "$modelNote": "multilingual_v2 has NO audio-tag support - bracketed tags get READ ALOUD, not consumed as direction (confirmed on ep02's n10). Do not add audio tags to this file.",
+  "$casting": "Single speaker, no cast, matching lines.json's narrator role and ep02's English track. Voice: River - Relaxed, Neutral, Informative (en-US) - same pick as ep02, for the same reason: neutral/informative reads as flat rather than amused.",
+  "speakers": {
+    "narrator": {
+      "voiceId": "SAz9YHcvj6GT2YYXdXww",
+      "voiceName": "River - Relaxed, Neutral, Informative (en-US)",
+      "note": "Documentary/textbook register, same brief as the Russian track's narrator: explains, never dramatizes.",
+      "settings": { "stability": 0.85, "similarity_boost": 0.75, "style": 0.0 }
+    }
+  },
+  "lines": [
+    { "id": "n01", "speaker": "narrator", "act": "cold-open", "text": "Last time, this came from software. It also comes from somewhere else." },
+
+    { "id": "n02", "speaker": "narrator", "act": "act1", "text": "Every company can be drawn as a set of functions - the jobs it has to do to create value." },
+    { "id": "n03", "speaker": "narrator", "act": "act1", "text": "These are the functions that build the product and get it to a customer - the primary work." },
+    { "id": "n04", "speaker": "narrator", "act": "act1", "text": "Underneath, the functions that make the first row possible, without building the product themselves." },
+    { "id": "n05", "speaker": "narrator", "act": "act1", "text": "What's left over, once both rows have done their work - the difference between what it cost and what it earned." },
+    { "id": "n06", "speaker": "narrator", "act": "act1", "text": "This is a value chain. It says what a company does. It does not yet say how the work actually moves." },
+    { "id": "n07", "speaker": "narrator", "act": "act1", "text": "That gap is exactly where this chapter is headed." },
+
+    { "id": "n08", "speaker": "narrator", "act": "connective", "text": "Say this box is where the actual work happens. What does work look like, up close?" },
+
+    { "id": "n09", "speaker": "narrator", "act": "act2", "text": "Break work into small, specialized pieces - one worker, one narrow task each. This is Taylorism. It built the industrial revolution." },
+    { "id": "n10", "speaker": "narrator", "act": "act2", "text": "On a factory floor, that worked. Each step was simple. A worker didn't need to know what happened before - just do the one thing in front of them." },
+    { "id": "n11", "speaker": "narrator", "act": "act2", "text": "Modern work doesn't stay this simple. Each step here needs to know the whole case, not just its own task." },
+    { "id": "n12", "speaker": "narrator", "act": "act2", "text": "Every handoff, someone has to reconstruct the context from nothing. That reconstruction - not the task itself - is what actually costs time." },
+    { "id": "n13", "speaker": "narrator", "act": "act2", "text": "Combine the small steps back into fewer, wider ones -" },
+    { "id": "n14", "speaker": "narrator", "act": "act2", "text": "- and give them to people who understand the whole case, not just one narrow piece of it." },
+
+    { "id": "n15", "speaker": "narrator", "act": "act3", "text": "Zoom back out. A company doesn't run on one function. It runs on a handful of processes - and each one stays a closed box." },
+    { "id": "n16", "speaker": "narrator", "act": "act3", "text": "None of these are opened up. What matters here is only what crosses the line between them." },
+    { "id": "n17", "speaker": "narrator", "act": "act3", "text": "This is as deep as the org level goes - a name, a manager, what comes in, what goes out. Not a flowchart of how the work happens inside." },
+    { "id": "n18", "speaker": "narrator", "act": "act3", "text": "Open it further, and you're no longer describing the company - you're describing one process's own internal work. Different question, different level." },
+    { "id": "n19", "speaker": "narrator", "act": "act3", "text": "What happens at these lines is, more than almost anything inside the boxes, what the business is actually judged on." },
+
+    { "id": "n20", "speaker": "narrator", "act": "close", "text": "A shape for what the company does. A reason the work has to be grouped coarser than Taylor would have grouped it. And a boundary around each process that stays deliberately closed." },
+    { "id": "n21", "speaker": "narrator", "act": "close", "text": "Different road than last time. Same destination." }
+  ]
+}

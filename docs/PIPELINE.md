@@ -36,6 +36,35 @@ this failure mode dangerous rather than merely annoying.
 So: the model can be the director. It cannot be the author. The gate exists to
 make that structural rather than optional.
 
+### The gate's checks are scoped per season, not universal
+
+The Olga error was a **real-world/cross-cultural practice** error: S01 invents a
+dramatized scenario, and inventing scenario detail can silently import assumptions
+(often Western) that don't hold in the setting being portrayed. That risk is real
+wherever a season **invents scenario**, and doesn't disappear just because a season
+looks calmer or more academic.
+
+It does not apply to a season with no invented scenario to get wrong. S02 is a
+**book illustration** season - it dramatizes a textbook's own claims and examples,
+not an invented office/scenario. Per the user (2026-08-11): "we are students who
+take material as the best practice, no opposition." S02 cards are checked for
+**fidelity to the source text** (does this claim what Weske actually says, no more,
+no less, no distortion) - not for real-world accuracy, because the season isn't
+asserting real-world accuracy independent of the book.
+
+Concretely, the validator (see "Generate/validate review" below) asks a different
+question depending on which season a card belongs to:
+
+| Season | What's being validated | Failure mode being caught |
+|---|---|---|
+| S01 (dramatized) | Does this scenario detail hold in the real/cultural setting portrayed? | Olga-style: a plausible-sounding invented detail that's actually wrong for the setting. |
+| S02 (book illustration) | Does this card state what the source chapter actually says? | Misreading or overreaching the text - claiming more than Weske claims, or distorting a definition. |
+
+New seasons should get an explicit entry in this table before their first concept
+card is generated, not inherit one by default - the two existing seasons already
+look different enough (invented drama vs. textbook illustration) that "one gate for
+everything" was the wrong model from the start.
+
 ## What is deliberately NOT automated
 
 **Publishing.** Uploading to YouTube stays manual, permanently. It is

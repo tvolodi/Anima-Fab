@@ -1,0 +1,42 @@
+{
+  "$comment": "S02 Episode 2 narration, ENGLISH track. Added 2026-08-11 per user request - on-screen text is already English (matching S01's convention), so narration should have an English option too, alongside the Russian track in lines.json (user: 'Russian voice is good, by the way' - this is an addition, not a replacement). Same line ids as lines.json so timing.ts's cue names map 1:1 if this track is selected instead.",
+  "language": "en",
+  "model": "eleven_multilingual_v2",
+  "$modelNote": "multilingual_v2 has NO audio-tag support (see docs/VOICE.md's fallback note) - bracketed tags like [matter-of-fact] get READ ALOUD, not consumed as direction. Confirmed 2026-08-11 when n10 first shipped with a tag and Scribe transcribed 'Matter of fact...' as spoken words. Do not add audio tags to this file.",
+  "$casting": "Single speaker, no cast, matching lines.json's narrator role. Voice: River - Relaxed, Neutral, Informative (en, American, neutral gender) - picked over more 'engaging/enthusiast' options specifically because docs/VOICE.md's lesson from ep01 is that an expressive tag/voice reads as amused rather than flat; River's own label already leans neutral/informative, closest English analogue to Marina's suppressed-warmth recipe.",
+  "speakers": {
+    "narrator": {
+      "voiceId": "SAz9YHcvj6GT2YYXdXww",
+      "voiceName": "River - Relaxed, Neutral, Informative (en-US)",
+      "note": "Documentary/textbook register, same brief as the Russian track's narrator: explains, never dramatizes, no reaction to on-screen events beyond stating what they mean.",
+      "settings": { "stability": 0.85, "similarity_boost": 0.75, "style": 0.0 }
+    }
+  },
+  "lines": [
+    { "id": "n01", "speaker": "narrator", "act": "cold-open", "text": "Everything used to live in one place." },
+
+    { "id": "n02", "speaker": "narrator", "act": "act1", "text": "Every application talked to the hardware directly." },
+    { "id": "n03", "speaker": "narrator", "act": "act1", "text": "One job, pulled out. One stable line left in." },
+
+    { "id": "n04", "speaker": "narrator", "act": "act2", "text": "Then: where does the data live?" },
+    { "id": "n05", "speaker": "narrator", "act": "act2", "text": "Then: how does a person actually use it?" },
+    { "id": "n06", "speaker": "narrator", "act": "act2", "text": "The same move, three times over. Pull the function out, keep one stable line back." },
+
+    { "id": "n07", "speaker": "narrator", "act": "act3", "text": "Different departments. Different copies of the same fact." },
+    { "id": "n08", "speaker": "narrator", "act": "act3", "text": "Change one, and the other two don't know." },
+
+    { "id": "n09", "speaker": "narrator", "act": "act4", "text": "One shared database. One version of the truth." },
+    { "id": "n10", "speaker": "narrator", "act": "act4", "text": "The same move as the operating system. Just at a different scale." },
+
+    { "id": "n11", "speaker": "narrator", "act": "act5", "text": "Then new systems arrive. From other vendors." },
+    { "id": "n12", "speaker": "narrator", "act": "act5", "text": "The same silo problem. One level up." },
+
+    { "id": "n13", "speaker": "narrator", "act": "act6", "text": "Wire every pair directly." },
+    { "id": "n14", "speaker": "narrator", "act": "act6", "text": "Six systems. Fifteen connections. Every new system adds more wiring than the last one." },
+
+    { "id": "n15", "speaker": "narrator", "act": "act7", "text": "The same six systems. Now, one shared hub." },
+    { "id": "n16", "speaker": "narrator", "act": "act7", "text": "The dependency didn't disappear. It moved inside the hub." },
+
+    { "id": "n17", "speaker": "narrator", "act": "close", "text": "Every fix so far has only moved where the coupling lives. None of them made the process itself visible." }
+  ]
+}

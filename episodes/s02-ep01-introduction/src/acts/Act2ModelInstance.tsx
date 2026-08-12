@@ -67,10 +67,22 @@ export const Act2ModelInstance: React.FC = () => {
 
   return (
     <AbsoluteFill style={{ backgroundColor: colors.BG }}>
+      {/* top/left + scale-only transform with transformOrigin "top left" -
+          NOT a combined translate()-scale() string. That combined form (no
+          transformOrigin set, so CSS defaults to "center center" of the
+          div's own unscaled content box) was a confirmed real bug in
+          Act3Orchestration.tsx - scaled content shifted ~350px from where
+          position math assumed it was. Harmless here specifically, since
+          nothing outside this div does node-level coordinate math against
+          it, but fixed anyway for consistency - see Act3's fix comment for
+          the full diagnosis. */}
       <div
         style={{
           position: "absolute",
-          transform: `translate(${DIAGRAM_POS.x}px, ${DIAGRAM_POS.y}px) scale(${DIAGRAM_SCALE})`,
+          top: DIAGRAM_POS.y,
+          left: DIAGRAM_POS.x,
+          transform: `scale(${DIAGRAM_SCALE})`,
+          transformOrigin: "top left",
         }}
       >
         <div

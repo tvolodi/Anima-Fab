@@ -253,7 +253,7 @@ async function main() {
   if (!episode) {
     console.error(
       "Usage:\n" +
-        "  node tools/tts/verify.mjs <episode-dir> [--only=id1,id2]\n" +
+        "  node tools/tts/verify.mjs <episode-dir> [--lang=en] [--only=id1,id2]\n" +
         '  node tools/tts/verify.mjs --file=path/to.mp3 --expect="текст"\n',
     );
     process.exit(1);
@@ -261,9 +261,11 @@ async function main() {
 
   const onlyArg = args.find((a) => a.startsWith("--only="));
   const only = onlyArg ? onlyArg.slice(7).split(",").map((s) => s.trim()) : null;
+  const langArg = args.find((a) => a.startsWith("--lang="));
+  const lang = langArg ? langArg.slice(7).trim() : null;
 
   const epDir = path.join(REPO_ROOT, "episodes", episode);
-  const manifestPath = path.join(epDir, "voice", "manifest.json");
+  const manifestPath = path.join(epDir, "voice", lang ? `manifest.${lang}.json` : "manifest.json");
   if (!existsSync(manifestPath)) {
     console.error(
       `No manifest at ${manifestPath}. Run tools/tts/synth.mjs first.`,

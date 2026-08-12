@@ -14,15 +14,30 @@ dist/
 .preview/
 
 # Synthesised narration. Regenerate with tools/tts/synth.mjs - the lines.json
-# and manifest.json ARE tracked, so durations survive without the audio.
+# and manifest.json ARE tracked (lines.<lang>.json / manifest.<lang>.json for
+# non-default language tracks, same rule), so durations survive without the
+# audio.
 episodes/*/voice/out/
-# Remotion serves audio from public/. It is a copy of voice/out - regenerate
-# with `pnpm ep01:voice` rather than committing it twice.
+episodes/*/voice/out.*/
+# Remotion serves audio from public/. It is a copy of voice/out (or voice/out.<lang>) -
+# regenerate with the episode's `voice`/`voice:<lang>` script rather than committing it twice.
 episodes/*/public/voice/
+episodes/*/public/voice.*/
+episodes/*/public/music/
 voice-auditions/
+
+# Visual-regression scratch diffs (fresh renders + diff images on failure).
+# baselines/ IS tracked - see tools/visual-regression/README.md.
+tools/visual-regression/diffs/
 
 # Books are copyrighted source material. Never commit them.
 books/
+
+# Sound library cache: the *.mp3 rule above already catches everything under
+# assets/sound-library/, this just makes the intent explicit. registry.json
+# (the curated catalogue - id, license, mood tags) IS tracked; regenerate the
+# audio cache from it with tools/sound-library/sync.mjs. See docs/ASSETS.md.
+assets/sound-library/
 
 .env
 .env.local

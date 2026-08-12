@@ -1,6 +1,7 @@
 import React from "react";
 import { Composition } from "remotion";
 import { Episode } from "./Episode";
+import { ActPreview } from "./ActPreview";
 import { ColdOpen } from "./acts/ColdOpen";
 import { Act1Testimonies } from "./acts/Act1Testimonies";
 import { Act2Overlay } from "./acts/Act2Overlay";
@@ -15,9 +16,14 @@ const H = 1080;
 
 /**
  * `Episode` is the deliverable. The per-act compositions exist so a single act
- * can be previewed or rendered in isolation - they read ABSOLUTE frames from
- * timing.ts, so previewing one still needs the whole timeline mounted. Use
- * Episode plus a frame number for anything timing-sensitive.
+ * can be previewed or rendered in isolation.
+ *
+ * Most act components read ABSOLUTE frames from timing.ts, so they're wrapped
+ * in `ActPreview` (local duration + a Sequence offset back to the act's real
+ * start) so scrubbing from local frame 0 shows genuinely correct content -
+ * see ActPreview.tsx. Act2Overlay is the one exception: its ACT2.* constants
+ * in timing.ts are already act2-local, so it's left unwrapped - wrapping it
+ * too would double-subtract the offset.
  */
 export const RemotionRoot: React.FC = () => (
   <>
@@ -32,7 +38,7 @@ export const RemotionRoot: React.FC = () => (
 
     <Composition
       id="ColdOpen"
-      component={ColdOpen}
+      component={() => <ActPreview start={0}><ColdOpen /></ActPreview>}
       durationInFrames={ACTS.coldOpen.end}
       fps={FPS}
       width={W}
@@ -41,13 +47,14 @@ export const RemotionRoot: React.FC = () => (
 
     <Composition
       id="Act1"
-      component={Act1Testimonies}
-      durationInFrames={ACTS.fourth.end}
+      component={() => <ActPreview start={ACTS.olga.start}><Act1Testimonies /></ActPreview>}
+      durationInFrames={ACTS.fourth.end - ACTS.olga.start}
       fps={FPS}
       width={W}
       height={H}
     />
 
+    {/* Not wrapped in ActPreview - already act2-local, see note above. */}
     <Composition
       id="Act2Overlay"
       component={Act2Overlay}
@@ -65,8 +72,8 @@ export const RemotionRoot: React.FC = () => (
 
     <Composition
       id="Act3"
-      component={Act3Cost}
-      durationInFrames={ACTS.act3.end}
+      component={() => <ActPreview start={ACTS.act3.start}><Act3Cost /></ActPreview>}
+      durationInFrames={ACTS.act3.end - ACTS.act3.start}
       fps={FPS}
       width={W}
       height={H}
@@ -74,8 +81,8 @@ export const RemotionRoot: React.FC = () => (
 
     <Composition
       id="Act4"
-      component={Act4Turn}
-      durationInFrames={ACTS.act4.end}
+      component={() => <ActPreview start={ACTS.act4.start}><Act4Turn /></ActPreview>}
+      durationInFrames={ACTS.act4.end - ACTS.act4.start}
       fps={FPS}
       width={W}
       height={H}
@@ -83,8 +90,8 @@ export const RemotionRoot: React.FC = () => (
 
     <Composition
       id="Close"
-      component={Close}
-      durationInFrames={ACTS.close.end}
+      component={() => <ActPreview start={ACTS.close.start}><Close /></ActPreview>}
+      durationInFrames={ACTS.close.end - ACTS.close.start}
       fps={FPS}
       width={W}
       height={H}

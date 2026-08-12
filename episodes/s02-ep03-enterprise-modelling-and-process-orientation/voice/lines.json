@@ -1,0 +1,42 @@
+{
+  "$comment": "S02 Episode 3 narration. Line ids are stable - timing.ts references them. Do not renumber; append instead. Square-bracket audio tags are eleven_v3 delivery direction and are NOT spoken - see docs/VOICE.md. Reuses the SAME narrator voice as ep01/ep02 (Marina, ymDCYd8puC7gYjxIamPt) per s02-narration-and-music-policy - series consistency, not a new cast decision.",
+  "language": "ru",
+  "model": "eleven_v3",
+  "$casting": "Single speaker, no cast, matching ep02's narrator role exactly - see docs/VOICE.md's cast table. High stability (0.85) again suppresses the voice's own 'warm' label. Register: documentary/textbook, drier than ep01, no character to play against. Act 2 lines (a03/a04) carry the episode's one dramatized beat and get a slightly more deliberate, matter-of-fact delivery via tags - not warmth, just weight.",
+  "speakers": {
+    "narrator": {
+      "voiceId": "ymDCYd8puC7gYjxIamPt",
+      "voiceName": "Marina - Soft, Clear and Warm (ru-RU)",
+      "note": "Documentary/textbook register. Explains, never dramatizes. Same voice as ep01/ep02's narrator for series consistency.",
+      "settings": { "stability": 0.85, "similarity_boost": 0.75, "style": 0.0 }
+    }
+  },
+  "lines": [
+    { "id": "n01", "speaker": "narrator", "act": "cold-open", "text": "В прошлый раз это шло от программного обеспечения. Но у этого есть и другой источник." },
+
+    { "id": "n02", "speaker": "narrator", "act": "act1", "text": "Любую компанию можно представить как набор функций — работ, которые нужно сделать, чтобы создать ценность." },
+    { "id": "n03", "speaker": "narrator", "act": "act1", "text": "Это функции, которые создают продукт и доставляют его клиенту — основная деятельность." },
+    { "id": "n04", "speaker": "narrator", "act": "act1", "text": "А под ними — функции, которые делают первую строку возможной, сами при этом продукт не создавая." },
+    { "id": "n05", "speaker": "narrator", "act": "act1", "text": "То, что остаётся, когда обе строки сделали своё дело — разница между тем, что это стоило, и тем, что это принесло." },
+    { "id": "n06", "speaker": "narrator", "act": "act1", "text": "Это цепочка ценности. Она говорит, что компания делает. Но пока не говорит, как именно движется работа." },
+    { "id": "n07", "speaker": "narrator", "act": "act1", "text": "Именно на этот пробел и нацелена эта глава." },
+
+    { "id": "n08", "speaker": "narrator", "act": "connective", "text": "Допустим, вот здесь и происходит настоящая работа. Как выглядит эта работа вблизи?" },
+
+    { "id": "n09", "speaker": "narrator", "act": "act2", "text": "Разбить работу на мелкие, узкоспециализированные операции — один работник, одна узкая задача. Это тейлоризм. Он породил промышленную революцию." },
+    { "id": "n10", "speaker": "narrator", "act": "act2", "text": "На заводском конвейере это работало. Каждый шаг был прост. Работнику не нужно было знать, что было раньше — только сделать то, что перед ним." },
+    { "id": "n11", "speaker": "narrator", "act": "act2", "text": "Современная работа устроена иначе. Каждый шаг здесь должен знать весь случай целиком, а не только свою узкую задачу." },
+    { "id": "n12", "speaker": "narrator", "act": "act2", "text": "[matter-of-fact] При каждой передаче кто-то заново восстанавливает контекст с нуля. Именно это восстановление — не сама задача — и съедает время." },
+    { "id": "n13", "speaker": "narrator", "act": "act2", "text": "Собрать мелкие шаги обратно — в меньшее число более широких —" },
+    { "id": "n14", "speaker": "narrator", "act": "act2", "text": "— и отдать их людям, которые понимают случай целиком, а не одну узкую часть." },
+
+    { "id": "n15", "speaker": "narrator", "act": "act3", "text": "Вернёмся к общей картине. Компания живёт не одной функцией. Она держится на горстке процессов — и каждый остаётся закрытой коробкой." },
+    { "id": "n16", "speaker": "narrator", "act": "act3", "text": "Ни один из них не открыт изнутри. Важно только то, что пересекает границу между ними." },
+    { "id": "n17", "speaker": "narrator", "act": "act3", "text": "Это предел, до которого доходит уровень компании — имя, менеджер, что входит, что выходит. Не блок-схема того, как работа устроена внутри." },
+    { "id": "n18", "speaker": "narrator", "act": "act3", "text": "Откройте его глубже — и вы уже описываете не компанию, а внутреннюю работу одного процесса. Другой вопрос, другой уровень." },
+    { "id": "n19", "speaker": "narrator", "act": "act3", "text": "То, что происходит на этих линиях — больше, чем почти всё внутри коробок — и есть то, по чему на самом деле судят бизнес." },
+
+    { "id": "n20", "speaker": "narrator", "act": "close", "text": "Форма того, что делает компания. Причина, по которой работу нужно группировать крупнее, чем группировал бы Тейлор. И граница вокруг каждого процесса, которая остаётся закрытой намеренно." },
+    { "id": "n21", "speaker": "narrator", "act": "close", "text": "Другая дорога, чем в прошлый раз. Тот же пункт назначения." }
+  ]
+}

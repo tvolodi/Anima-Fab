@@ -1,0 +1,176 @@
+{
+  "model": "eleven_v3",
+  "generatedAt": "2026-08-11T10:22:48.710Z",
+  "lines": {
+    "n01": {
+      "hash": "12a38fd3e29556f3",
+      "speaker": "narrator",
+      "act": "cold-open",
+      "text": "Когда-то всё это жило в одном месте.",
+      "file": "voice/out/n01.mp3",
+      "durationSeconds": 2.795,
+      "frames30": 84,
+      "bytes": 44765
+    },
+    "n02": {
+      "hash": "dfc8940376af8380",
+      "speaker": "narrator",
+      "act": "act1",
+      "text": "Каждое приложение говорило с оборудованием напрямую.",
+      "file": "voice/out/n02.mp3",
+      "durationSeconds": 3.265,
+      "frames30": 98,
+      "bytes": 52288
+    },
+    "n03": {
+      "hash": "695e08dc718dda0e",
+      "speaker": "narrator",
+      "act": "act1",
+      "text": "Одна задача — вынесена наружу. Одна стабильная связь — оставлена внутрь.",
+      "file": "voice/out/n03.mp3",
+      "durationSeconds": 5.669,
+      "frames30": 171,
+      "bytes": 90741
+    },
+    "n04": {
+      "hash": "09dc774947a0650f",
+      "speaker": "narrator",
+      "act": "act2",
+      "text": "Потом — где хранить данные?",
+      "file": "voice/out/n04.mp3",
+      "durationSeconds": 2.142,
+      "frames30": 65,
+      "bytes": 34316
+    },
+    "n05": {
+      "hash": "130998483ee87bf2",
+      "speaker": "narrator",
+      "act": "act2",
+      "text": "Потом — как человеку вообще этим пользоваться?",
+      "file": "voice/out/n05.mp3",
+      "durationSeconds": 2.952,
+      "frames30": 89,
+      "bytes": 47273
+    },
+    "n06": {
+      "hash": "03c99d405e0cd30e",
+      "speaker": "narrator",
+      "act": "act2",
+      "text": "Один и тот же приём — трижды подряд. Вынести функцию наружу, оставить одну стабильную связь.",
+      "file": "voice/out/n06.mp3",
+      "durationSeconds": 7.184,
+      "frames30": 216,
+      "bytes": 114982
+    },
+    "n07": {
+      "hash": "ff1146b8fea39ff5",
+      "speaker": "narrator",
+      "act": "act3",
+      "text": "Разные отделы. Разные копии одного и того же факта.",
+      "file": "voice/out/n07.mp3",
+      "durationSeconds": 5.094,
+      "frames30": 153,
+      "bytes": 81546
+    },
+    "n08": {
+      "hash": "d16d3b5df3db1ee8",
+      "speaker": "narrator",
+      "act": "act3",
+      "text": "Изменишь один — два других об этом не узнают.",
+      "file": "voice/out/n08.mp3",
+      "durationSeconds": 3.579,
+      "frames30": 108,
+      "bytes": 57304
+    },
+    "n09": {
+      "hash": "3c6420df30d7c097",
+      "speaker": "narrator",
+      "act": "act4",
+      "text": "Одна общая база данных. Одна версия правды.",
+      "file": "voice/out/n09.mp3",
+      "durationSeconds": 3.579,
+      "frames30": 108,
+      "bytes": 57304
+    },
+    "n10": {
+      "hash": "d630dab78f57ab5c",
+      "speaker": "narrator",
+      "act": "act4",
+      "text": "[matter-of-fact] Тот же приём, что и с операционной системой. Просто в другом масштабе.",
+      "file": "voice/out/n10.mp3",
+      "durationSeconds": 4.075,
+      "frames30": 123,
+      "bytes": 65245
+    },
+    "n11": {
+      "hash": "5d9745df19e99b23",
+      "speaker": "narrator",
+      "act": "act5",
+      "text": "Потом появляются новые системы. От других поставщиков.",
+      "file": "voice/out/n11.mp3",
+      "durationSeconds": 4.78,
+      "frames30": 144,
+      "bytes": 76530
+    },
+    "n12": {
+      "hash": "222a284f63b9eb04",
+      "speaker": "narrator",
+      "act": "act5",
+      "text": "Та же проблема разрозненности. Уровнем выше.",
+      "file": "voice/out/n12.mp3",
+      "durationSeconds": 3.422,
+      "frames30": 103,
+      "bytes": 54796
+    },
+    "n13": {
+      "hash": "159ead923a032d7d",
+      "speaker": "narrator",
+      "act": "act6",
+      "text": "Соединить каждую пару напрямую.",
+      "file": "voice/out/n13.mp3",
+      "durationSeconds": 2.456,
+      "frames30": 74,
+      "bytes": 39332
+    },
+    "n14": {
+      "hash": "d485287d90e647f3",
+      "speaker": "narrator",
+      "act": "act6",
+      "text": "Шесть систем. Пятнадцать связей. Каждая новая система добавляет больше связей, чем предыдущая.",
+      "file": "voice/out/n14.mp3",
+      "durationSeconds": 7.837,
+      "frames30": 236,
+      "bytes": 125431
+    },
+    "n15": {
+      "hash": "451276389e17d2c8",
+      "speaker": "narrator",
+      "act": "act7",
+      "text": "Те же шесть систем. Теперь — один общий узел.",
+      "file": "voice/out/n15.mp3",
+      "durationSeconds": 4.389,
+      "frames30": 132,
+      "bytes": 70261
+    },
+    "n16": {
+      "hash": "ca50906feefe7dda",
+      "speaker": "narrator",
+      "act": "act7",
+      "text": "Зависимость никуда не делась. Она переехала внутрь узла.",
+      "file": "voice/out/n16.mp3",
+      "durationSeconds": 4.232,
+      "frames30": 127,
+      "bytes": 67753
+    },
+    "n17": {
+      "hash": "509b2dec4e914643",
+      "speaker": "narrator",
+      "act": "close",
+      "text": "Каждое решение до сих пор лишь перемещало связанность. Ни одно не сделало видимым сам процесс.",
+      "file": "voice/out/n17.mp3",
+      "durationSeconds": 7.576,
+      "frames30": 228,
+      "bytes": 121252
+    }
+  }
+}
